@@ -1,0 +1,323 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#wuoyMember-the-sales {
+    background  : white!important;
+}
+
+#wuoyMember-the-sales * {
+    font-family     : Roboto,"Open Sans","Noto Sans","Tahoma";
+}
+
+#wuoyMember-the-sales h2#logo {
+    font-size: 24px;
+    font-weight: normal;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+#wuoyMember-the-sales hr {
+    margin  : 30px 0;
+}
+
+#wuoyMember-the-sales h1 {
+    font-size: 36px;
+    margin-bottom: 0px;
+}
+
+#wuoyMember-the-sales p {
+    padding : 10px 0;
+    line-height : 150%;
+}
+
+
+#wuoyMember-the-holder {
+    width   : 720px;
+    margin  : 20px auto 50px;
+}
+
+#wuoyMember-the-holder #wuoyMember-sales-tab li {}
+#wuoyMember-the-holder #wuoyMember-sales-tab li a { line-height: 100%}
+#wuoyMember-the-holder #wuoyMember-sales-tab li.ui-state-active a { color :white;}
+
+#wuoyMember-the-holder form {
+    -webkit-box-shadow  : 8px 8px 0px 0px rgba(102,102,102,0.7);
+    -moz-box-shadow     : 8px 8px 0px 0px rgba(102,102,102,0.7);
+    box-shadow          : 8px 8px 0px 0px rgba(102,102,102,0.7);
+}
+
+form.wuoyMember-sales-form {
+	padding	: 10px 20px;
+	border	: 1px solid #aaa;
+	border-top	: 5px solid #aaa;
+}
+
+form.wuoyMember-sales-form label {
+    color: #4d4d4d;
+    cursor: pointer;
+    display: block;
+    font-size: 14px!important;
+    font-weight: bold!important;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+form.wuoyMember-sales-form h3 {
+	font-size	: 16px;
+	font-weight	: bold;
+	margin		: 40px 0 10px;
+    padding-bottom  : 0;
+    line-height     : 100%;
+	border-bottom	: 1px solid #008cba;
+}
+
+form.wuoyMember-sales-form h3 span {
+    min-width   : 180px;
+    display     : inline-block;
+    background  : #008cba;
+    padding     : 8px 30px 8px 15px;
+    color       : #fff;
+    letter-spacing  : 0;
+}
+
+form.wuoyMember-sales-form label sup { color : #f00; }
+
+form.wuoyMember-sales-form input[type=text],
+form.wuoyMember-sales-form input[type=password],
+form.wuoyMember-sales-form textarea {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.75);
+    display: block;
+    font-family: inherit;
+    font-size: 1rem;
+    height: 2.5rem;
+    margin: 0 0 1rem;
+    padding: 0.5rem;
+    transition: box-shadow 0.45s ease 0s, border-color 0.45s ease-in-out 0s;
+    width: 100%;
+}
+
+form.wuoyMember-sales-form input[readonly] {
+	background : #ccc;
+}
+
+form.wuoyMember-sales-form input[type=checkbox],
+form.wuoyMember-sales-form input[type=radio] {
+    margin  : 0!important;
+}
+
+form.wuoyMember-sales-form select{
+    background-color	: #fafafa;
+    background-image	: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+");
+    background-position	: 100% center;
+    background-repeat	: no-repeat;
+    border			: 1px solid #cccccc;
+    border-radius	: 0;
+    color			: rgba(0, 0, 0, 0.75);
+    font-size		: 0.875rem;
+    height			: 2.3125rem;
+    line-height		: normal;
+    padding			: 0.5rem;
+    width			: 100%;
+	margin-bottom	: 15px;
+}
+
+form.wuoyMember-sales-form .checkboxes {
+	margin-bottom	: 10px;
+}
+
+form.wuoyMember-sales-form .checkboxes label {
+	display	: block;
+	font-weight	: normal!important;
+	margin-bottom	: 5px;
+}
+
+form.wuoyMember-sales-form textarea { min-height:100px; }
+
+form.wuoyMember-sales-form .alert-box.alert {
+    background-color: #f04124;
+    border-color: #de2b0f;
+    color: #ffffff;
+}
+form.wuoyMember-sales-form .alert-box {
+    background-color: #008cba;
+    border-color: #007ba0;
+    border-style: solid;
+    border-width: 1px;
+    color: #ffffff;
+    display: block;
+    font-size: 0.8125rem;
+    font-weight: normal;
+    margin-bottom: 1.25rem;
+    padding: 0.875rem 1.5rem 0.875rem 0.875rem;
+    position: relative;
+    transition: opacity 300ms ease-out 0s;
+}
+
+form.wuoyMember-sales-form .alert-box.success {
+    background-color: #43ac6a;
+    border-color: #3a945b;
+    color: #ffffff;
+}
+
+form.wuoyMember-sales-form button,form.wuoyMember-sales-form  .button {
+    display: inline-block;
+}
+form.wuoyMember-sales-form button,form.wuoyMember-sales-form  .button {
+    background-color: #008cba;
+    border-color: #007295;
+    border-style: solid;
+    border-width: 0;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0 0 1.25rem;
+    padding: 1rem 2rem 1.0625rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 300ms ease-out 0s;
+}
+
+form.wuoyMember-sales-form button:hover,
+form.wuoyMember-sales-form  .button:hover {
+    background: #333;
+}
+
+#recaptcha_area, #recaptcha_table {
+    table-layout:auto !important;
+ }
+
+.recaptcha_is_showing_audio embed { height: 0; width: 0; }
+
+#recaptcha_area input[type="text"] {
+  display: inline-block !important;
+  height: auto !important;
+}
+
+.recaptchatable, #recaptcha_area tr, #recaptcha_area td, #recaptcha_area th { line-height : 0%;!important; }
+
+@media (max-width: 444px) {
+    .recaptchatable #recaptcha_image {
+        margin: 0 !important;
+        width: 200px !important;
+        float:left !important;
+    }
+    .recaptchatable #recaptcha_image img {
+        max-width:100%;
+    }
+    .recaptchatable .recaptcha_r1_c1, .recaptchatable .recaptcha_r3_c1, .recaptchatable .recaptcha_r3_c2, .recaptchatable .recaptcha_r7_c1, .recaptchatable .recaptcha_r8_c1, .recaptchatable .recaptcha_r3_c3, .recaptchatable .recaptcha_r2_c1, .recaptchatable .recaptcha_r4_c1, .recaptchatable .recaptcha_r4_c2, .recaptchatable .recaptcha_r4_c4, .recaptchatable .recaptcha_image_cell, .recaptchatable .recaptcha_r2_c2 {
+        background: none !important;
+    }
+}
+
+.alert-box {
+    background-color: #008cba;
+    border-color: #007ba0;
+    border-style: solid;
+    border-width: 1px;
+    color: #ffffff;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 1.25rem;
+    padding: 0.875rem 1.5rem 0.875rem 0.875rem;
+    position: relative;
+    transition: opacity 300ms ease-out 0s;
+	line-height	: 150%!important;
+}
+.alert-box .close {
+    color: #333333;
+    font-size: 1.375rem;
+    line-height: 0;
+    margin-top: -0.6875rem;
+    opacity: 0.3;
+    padding: 9px 6px 4px;
+    position: absolute;
+    right: 0.25rem;
+    top: 50%;
+}
+.alert-box .close:hover, .alert-box .close:focus {
+    opacity: 0.5;
+}
+.alert-box.radius {
+    border-radius: 3px;
+}
+.alert-box.round {
+    border-radius: 1000px;
+}
+.alert-box.success {
+    background-color: #43ac6a;
+    border-color: #3a945b;
+    color: #ffffff;
+}
+.alert-box.alert {
+    background-color: #f04124;
+    border-color: #de2b0f;
+    color: #ffffff;
+}
+.alert-box.secondary {
+    background-color: #e7e7e7;
+    border-color: #c7c7c7;
+    color: #4f4f4f;
+}
+.alert-box.warning {
+    background-color: #f08a24;
+    border-color: #de770f;
+    color: #ffffff;
+}
+.alert-box.info {
+    background-color: #a0d3e8;
+    border-color: #74bfdd;
+    color: #4f4f4f;
+}
+.alert-box.alert-close {
+    opacity: 0;
+}
+
+.alert-box a 		{
+	color : #ccc!important;
+	text-decoration:underline; }
+.alert-box a:hover 	{ text-decoration:none; }
+
+
+.alert-box a.button-super {
+	display	: inline-block;
+	padding	: 8px 12px;
+	text-decoration	: none;
+	border-radius	: 3px;
+	background		: #ccc!important;
+	color			: #222!important;
+}
+
+.alert-box a.button-super:hover {
+	background		: #888!important;
+	color			: #eee!important;
+}
+
+#wuoyMember-sales-tab.ui-tabs .ui-tabs-panel {
+	padding	: 0!important;
+}
+
+#wuoyMember-the-sales p.payment-info {
+    background      : #DBF6FF;
+    line-height     : 150%;
+    margin          : 0 0 15px 0;
+    padding-left    : 25px;
+    padding-right   : 10px;
+    font-size       : 12px;
+}
+
+
+#wp-admin-bar-user-info .avatar {
+    max-width: 64px!important;
+}
