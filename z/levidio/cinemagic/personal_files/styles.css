@@ -1,0 +1,387 @@
+/*
+
+LEVIDIO CINEMAGIC : DOWNLOAD PAGE
+by RootPixel
+info@rootpixel.net
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Raleway:100,200,300,400,500,600,700,800,900');
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #1C2230 url(../img/bg.jpg)no-repeat top center;
+	background-size: cover!important;
+	font-family: 'Montserrat';
+	color: rgba(255,255,255,.75);
+	font-weight: 300;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+	overflow-x: hidden;
+}
+img{
+	max-width: 100%;
+}
+
+/*Browser Scrollbar*/
+::-webkit-scrollbar{
+  	width: 4px;  /* for vertical scrollbars */
+  	height: 4px; /* for horizontal scrollbars */
+}
+::-webkit-scrollbar-track{
+  	background: rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb{
+  	background: #90b2e4;
+  	border-radius: 10px;
+  	box-shadow: 0 0 15px #90b2e4;
+}
+
+.nav{
+	background-color: rgba(56,64,84,.98);
+	padding: 10px 0 20px;
+	box-shadow: 0 15px 25px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 15px 25px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 15px 25px rgba(0,0,0,.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+}
+.nav h5{
+	margin-top: 30px;
+	position: relative;
+	display: inline-block;
+	font-weight: 700;
+}
+.nav h5:before{
+	content: "";
+	width: 11px;
+	height: 11px;
+	position: absolute;
+	top: 2px;
+	left: -30px;
+	background: url(../img/dot.png);
+}
+
+.xxs-visible{
+	display: none;
+}
+
+/*TEXT PROPERTIES*/
+h1{
+	font-size: 30px;
+	line-height: 1.2em;
+	font-weight: 700;
+}
+h2{
+    text-transform: uppercase;
+	margin-top: 40px;
+	color: rgba(255,255,255,.8);
+	font-size: 28px;
+	font-weight: 800;
+	margin-bottom: 0;
+	text-shadow: 0 0 25px #90b2e4;
+}
+h3{
+	text-transform: uppercase;
+	color: #90b2e4;
+	font-size: 16px;
+	font-weight: 800;
+}
+.text-yellow{
+	color: #FFFA6E;
+}
+.text-white{
+	color: rgba(255,255,255,.8);
+}
+
+#content{
+	margin-top: 150px;
+}
+
+#content .content-wrapper{
+	background-color: rgba(56,64,84,.9);
+	padding: 30px 20px;
+	border-radius: 10px;
+	box-shadow: 0 15px 25px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 15px 25px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 15px 25px rgba(0,0,0,.1);
+	margin-bottom: 60px;
+}
+
+#content .content-wrapper .bonus-wrapper{
+	background-color: rgba(0,0,0,.2);
+	padding: 30px 30px;
+	margin: 60px auto 20px;
+	width: 80%;
+	border-radius: 10px;
+}
+
+/*BUTTON*/
+.btn-group{
+	margin: 10px auto;
+	border-radius: 5px;
+	box-shadow: 0 5px #6687BA;
+	-moz-box-shadow: 0 5px #6687BA;
+	-webkit-box-shadow: 0 5px #6687BA;
+	transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+}
+.btn-group:hover{
+	box-shadow: 0 1px #6687BA;
+	transition: 0.3s all ease;
+	-moz-transition: 0.3s all ease;
+	-webkit-transition: 0.3s all ease;
+	transform: translateY(5px);
+}
+.btn{
+	height: 50px;
+	font-size: 13px;
+	width: 470px;
+	border: 0;
+	color: #3A435C;
+	font-weight: 600;
+	letter-spacing: 0.03em;
+	box-shadow: 0 0 25px rgba(144,178,228,.5);
+}
+.btn.btn-icon{
+	width: 50px;
+	background-color: #82A5D9;
+}
+.btn.btn-title{
+	background-color: #90b2e4;
+	text-align: left;
+}
+
+/*BUTTON COLOR: GREEN*/
+.btn-group.btn-green{
+	box-shadow: 0 5px #78AC5B;
+}
+.btn-group.btn-green:hover{
+	box-shadow: 0 1px #78AC5B;
+	transition: 0.3s all ease;
+	-moz-transition: 0.3s all ease;
+	-webkit-transition: 0.3s all ease;
+	transform: translateY(5px);
+}
+.btn-group.btn-green .btn{
+	box-shadow: 0 0 25px rgba(163,222,131,.8);
+	color: #346473;
+}
+.btn-group.btn-green .btn.btn-title{
+	background-color: #A3DE83;
+}
+.btn-group.btn-green .btn.btn-icon{
+	background-color: #9BD37C;
+}
+
+/*BUTTON COLOR: YELLOW*/
+.btn-group.btn-yellow{
+	box-shadow: 0 5px #C3A44A;
+}
+.btn-group.btn-yellow:hover{
+	box-shadow: 0 1px #C3A44A;
+	transition: 0.3s all ease;
+	-moz-transition: 0.3s all ease;
+	-webkit-transition: 0.3s all ease;
+	transform: translateY(5px);
+}
+.btn-group.btn-yellow .btn{
+	box-shadow: 0 0 25px rgba(245,208,97,.8);
+	color: #2A363B;
+}
+.btn-group.btn-yellow .btn.btn-title{
+	background-color: #F5D061;
+}
+.btn-group.btn-yellow .btn.btn-icon{
+	background-color: #EAC65A;
+}
+
+.banner{
+    margin: 15px 0 35px;
+    box-shadow: 0 15px 45px rgba(0,0,0,.4);
+    display: block;
+}
+
+img.cover-box{
+    box-shadow: 0 0 65px #6687BA; 
+    margin: 15px auto;
+    display: block;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+hr{
+    width: 500px;
+    max-width: 90%;
+    border-color: #0d0d0d;
+    margin: 35px auto;
+    box-shadow: 0 1px 0 rgba(255,255,255,.15);
+}
+
+footer{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: rgba(56,64,84,.8);
+	padding: 40px;
+	box-shadow: 0 -15px 25px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 -15px 25px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 -15px 25px rgba(0,0,0,.1);
+}
+
+/*RESPONSIVE UTILITIES*/
+@media (max-width: 768px){
+	.container{
+		width: 96%;
+	}
+	h1{
+		font-size: 20px;
+	}
+
+	#content .content-wrapper{
+		padding: 20px;
+		margin-bottom: 50px;
+	}
+
+	#content .content-wrapper .bonus-wrapper{
+		padding: 20px;
+		margin: 40px auto 10px;
+		width: 95%;
+	}
+
+	.btn{
+		width: 340px; 
+	}
+
+	.ms-center{
+		text-align: center!important
+	}
+} 
+
+@media (max-width: 600px){
+	.btn-group{
+		width: 90%;
+		height: auto;
+	}
+	.btn{
+		display: block;
+		height: 40px;
+		width: 100%;
+		font-size: 12px;
+	}
+	.btn.btn-icon{
+		display: none;
+	}
+	.btn.btn-title{
+		border-radius: 5px!important;
+		text-align: center;
+	}
+	footer{
+		padding: 20px;
+	}
+} 
+
+@media (max-width: 480px){
+	.xxs-hide{
+		display: none;
+	}
+	.xxs-visible{
+		display: inline;
+	}
+	.nav h5{
+		margin-top: 0;
+		font-size: 11px;
+		letter-spacing: 0.3em;
+		font-weight: 500;
+	}
+	h3{
+		font-size: 12px;
+		margin-top: 20px;
+		line-height: 1.2em;
+		font-weight: 800;
+	}
+}
+
+
+/*Bootstrap Grid*/
+.col-ms-1, .col-ms-2, .col-ms-3, .col-ms-4, .col-ms-5, .col-ms-6, .col-ms-7, .col-ms-8, .col-ms-9, .col-ms-10, .col-ms-11, .col-ms-12 {
+	position:relative;
+	padding-left:15px;
+	padding-right:15px;
+} 
+@media (min-width: 480px) and (max-width: 767px) {
+	.container {
+		max-width:748px;
+	} 
+	.col-ms-1,
+	.col-ms-2,
+	.col-ms-3,
+	.col-ms-4,
+	.col-ms-5,
+	.col-ms-6,
+	.col-ms-7,
+	.col-ms-8,
+	.col-ms-9,
+	.col-ms-10,
+	.col-ms-11 {float:left;}
+	.col-ms-1 {width:8.33333333%;}
+	.col-ms-2 {width:16.66666667%;}
+	.col-ms-3 {width:25%;}
+	.col-ms-4 {width:33.33333333%;}
+	.col-ms-5 {width:41.66666667%;}
+	.col-ms-6 {width:50%;}
+	.col-ms-7 {width:58.33333333%;}
+	.col-ms-8 {width:66.66666667%;}
+	.col-ms-9 {width:75%;}
+	.col-ms-10 {width:83.33333333%;}
+	.col-ms-11 {width:91.66666667%;}
+	.col-ms-12 {width:100%;}
+	.col-ms-pull-0 {right:auto;}
+	.col-ms-pull-1 {right:8.33333333%;}
+	.col-ms-pull-2 {right:16.66666667%;}
+	.col-sm-pull-3 {right:25%;}
+	.col-sm-pull-4 {right:33.33333333%;}
+	.col-sm-pull-5 {right:41.66666667%;}
+	.col-sm-pull-6 {right:50%;}
+	.col-sm-pull-7 {right:58.33333333%;}
+	.col-ms-pull-8 {right:66.66666667%;}
+	.col-ms-pull-9 {right:75%;}
+	.col-ms-pull-10 {right:83.33333333%;}
+	.col-ms-pull-11 {right:91.66666667%;}
+	.col-ms-pull-12 {right:100%;}
+	.col-ms-push-0 {left:auto;}
+	.col-ms-push-1 {left:8.33333333%;}
+	.col-ms-push-2 {left:16.66666667%;}
+	.col-sm-push-3 {left:25%;}
+	.col-sm-push-4 {left:33.33333333%;}
+	.col-sm-push-5 {left:41.66666667%;}
+	.col-sm-push-6 {left:50%;}
+	.col-sm-push-7 {left:58.33333333%;}
+	.col-ms-push-8 {left:66.66666667%;}
+	.col-ms-push-9 {left:75%;}
+	.col-ms-push-10 {left:83.33333333%;}
+	.col-ms-push-11 {left:91.66666667%;}
+	.col-ms-push-12 {left:100%;}
+	.col-ms-offset-0 {margin-left:0;}
+	.col-ms-offset-1 {margin-left:8.33333333%;}
+	.col-ms-offset-2 {margin-left:16.66666667%;}
+	.col-ms-offset-3 {margin-left:25%;}
+	.col-ms-offset-4 {margin-left:33.33333333%;}
+	.col-ms-offset-5 {margin-left:41.66666667%;}
+	.col-ms-offset-6 {margin-left:50%;}
+	.col-ms-offset-7 {margin-left:58.33333333%;}
+	.col-ms-offset-8 {margin-left:66.66666667%;}
+	.col-ms-offset-9 {margin-left:75%;}
+	.col-ms-offset-10 {margin-left:83.33333333%;}
+	.col-ms-offset-11 {margin-left:91.66666667%;}
+	.col-ms-offset-12 {margin-left:100%;}
+}
+@media (max-width: 480px){
+    .bannerOTO{
+        background-size: 300px 117px;
+    }
+}
