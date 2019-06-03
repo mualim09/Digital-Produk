@@ -1,0 +1,71 @@
+﻿$(function () {
+    debugger;
+    $('input').iCheck({
+        checkboxClass: 'icheckbox_square-blue',
+        radioClass: 'iradio_square-blue',
+        increaseArea: '20%' // optional
+    });
+
+    $("submit").click(function () {
+        $(this).val($(this).attr('data-swap'));
+    });
+});
+
+$(document).ready(function () {
+    debugger;
+    $("#form1").validate({
+        errorClass: "error-class",
+        validClass: "valid-class",
+        errorElement: 'div',
+        errorPlacement: function (error, element) {
+            if (element.parent('.input-group').length) {
+                error.insertAfter(element.parent());
+            } else {
+                error.insertAfter(element);
+            }
+        },
+        onError: function () {
+            $('.input-group.error-class').find('.help-block.form-error').each(function () {
+                $(this).closest('.form-group').addClass('error-class').append($(this));
+            });
+        },
+        rules: {
+            name: {
+                required: true
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            password: {
+                required: true
+            },
+            confirmpass: {
+                equalTo: "#password"
+            },
+            agree:
+            {
+                required: true
+            }
+        },
+        messages: {
+            name: {
+                required: "Please Enter Screen Name"
+            },
+            email: {
+                required: "Enter the Email address",
+                email: "Please enter valid Email address"
+            },
+
+            password: {
+                required: "Enter the Correct Password"
+            },
+            confirmpass: {
+                equalTo: "Please enter the same password again."
+            },
+            agree: {
+                required: "Plase check on agree checkbox"
+            }
+        },
+    });
+});
