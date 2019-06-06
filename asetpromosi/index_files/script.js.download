@@ -1,0 +1,125 @@
+!function(){var e,t,a;if(e=document.getElementById("site-navigation"),e&&(t=e.getElementsByTagName("button")[0],"undefined"!=typeof t)){if(a=e.getElementsByTagName("ul")[0],"undefined"==typeof a)return void(t.style.display="none");a.setAttribute("aria-expanded","false"),-1===a.className.indexOf("nav-menu")&&(a.className+=" nav-menu"),t.onclick=function(){-1!==e.className.indexOf("toggled")?(e.className=e.className.replace(" toggled",""),t.setAttribute("aria-expanded","false"),a.setAttribute("aria-expanded","false")):(e.className+=" toggled",t.setAttribute("aria-expanded","true"),a.setAttribute("aria-expanded","true"))}}}();!function(){var e=navigator.userAgent.toLowerCase().indexOf("webkit")>-1,t=navigator.userAgent.toLowerCase().indexOf("opera")>-1,n=navigator.userAgent.toLowerCase().indexOf("msie")>-1;(e||t||n)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var e=document.getElementById(location.hash.substring(1));e&&(/^(?:a|select|input|button|textarea)$/i.test(e.tagName)||(e.tabIndex=-1),e.focus())},!1)}();
+
+var lpdata = document.documentElement;
+lpdata.setAttribute('data-useragent',  navigator.userAgent);
+lpdata.setAttribute('data-platform', navigator.platform );
+
+/* https://jonsuh.com/blog/social-share-links/ */
+function wpbshareopen(url, width, height) {
+	var left = (screen.width / 2) - (width / 2), top = (screen.height / 2) - (height / 2);
+	window.open(
+		url,
+		"",
+		"menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=" + width + ",height=" + height + ",top=" + top + ",left=" + left
+	);
+}
+var wpbshare = document.querySelectorAll(".share-link");
+if (wpbshare) {
+	[].forEach.call(wpbshare, function(anchor) {
+		anchor.addEventListener("click", function(e) {
+			e.preventDefault();
+			wpbshareopen(this.href, 500, 300);
+		});
+	});
+}
+
+jQuery(document).ready(function( $ ) {
+	$('.elementor-button').on('click', function() {
+		if ( $(this).data('fbevent') ) {
+			if ( $(this).data('fbevent') == 'Purchase' ) {
+				fbq('track', 'Purchase', {value: '0.00', currency: 'USD'});
+			}
+			else {
+				fbq('track', $(this).data('fbevent'));
+			}
+		}
+	});
+});
+
+jQuery(function(a){function b(){a("div.quantity:not(.buttons_added), td.quantity:not(.buttons_added)").addClass("buttons_added").append('<input type="button" value="+" class="plus" />').prepend('<input type="button" value="-" class="minus" />')}String.prototype.getDecimals||(String.prototype.getDecimals=function(){var a=this,b=(""+a).match(/(?:\.(\d+))?(?:[eE]([+-]?\d+))?$/);return b?Math.max(0,(b[1]?b[1].length:0)-(b[2]?+b[2]:0)):0}),a(document).on("updated_wc_div",function(){b()}),a(document).on("click",".plus, .minus",function(){var b=a(this).closest(".quantity").find(".qty"),c=parseFloat(b.val()),d=parseFloat(b.attr("max")),e=parseFloat(b.attr("min")),f=b.attr("step");c&&""!==c&&"NaN"!==c||(c=0),""!==d&&"NaN"!==d||(d=""),""!==e&&"NaN"!==e||(e=0),"any"!==f&&""!==f&&void 0!==f&&"NaN"!==parseFloat(f)||(f=1),a(this).is(".plus")?d&&c>=d?b.val(d):b.val((c+parseFloat(f)).toFixed(f.getDecimals())):e&&c<=e?b.val(e):c>0&&b.val((c-parseFloat(f)).toFixed(f.getDecimals())),b.trigger("change")}),b()});
+
+/* Sticky Plugin v1.0.2 for jQuery | http://stickyjs.com/ | http://labs.anthonygarand.com/sticky | Copyright (c) 2011-2015 Anthony Garand | Improvements by German M. Bravo (Kronuz), Ruud Kamphuis (ruudk), Leonardo C. Daronco (daronco) */
+!function(t){var e=Array.prototype.slice,r=Array.prototype.splice,i={topSpacing:0,bottomSpacing:0,className:"is-sticky",wrapperClassName:"sticky-wrapper",center:!1,getWidthFrom:"",widthFromWrapper:!0,responsiveWidth:!1},n=t(window),s=t(document),o=[],a=n.height(),c=function(){for(var e=n.scrollTop(),r=s.height(),i=r-a,c=e>i?i-e:0,p=0;p<o.length;p++){var l=o[p],u=l.stickyWrapper.offset().top,d=u-l.topSpacing-c;if(d>=e)null!==l.currentTop&&(l.stickyElement.css({width:"",position:"",top:""}),l.stickyElement.parent().removeClass(l.className),l.stickyElement.trigger("sticky-end",[l]),l.currentTop=null);else{var h=r-l.stickyElement.outerHeight()-l.topSpacing-l.bottomSpacing-e-c;if(0>h?h+=l.topSpacing:h=l.topSpacing,l.currentTop!=h){var g;l.getWidthFrom?g=t(l.getWidthFrom).width()||null:l.widthFromWrapper&&(g=l.stickyWrapper.width()),null==g&&(g=l.stickyElement.width()),l.stickyElement.css("width",g).css("position","fixed").css("top",h),l.stickyElement.parent().addClass(l.className),null===l.currentTop?l.stickyElement.trigger("sticky-start",[l]):l.stickyElement.trigger("sticky-update",[l]),l.currentTop===l.topSpacing&&l.currentTop>h||null===l.currentTop&&h<l.topSpacing?l.stickyElement.trigger("sticky-bottom-reached",[l]):null!==l.currentTop&&h===l.topSpacing&&l.currentTop<h&&l.stickyElement.trigger("sticky-bottom-unreached",[l]),l.currentTop=h}}}},p=function(){a=n.height();for(var e=0;e<o.length;e++){var r=o[e],i=null;r.getWidthFrom?r.responsiveWidth===!0&&(i=t(r.getWidthFrom).width()):r.widthFromWrapper&&(i=r.stickyWrapper.width()),null!=i&&r.stickyElement.css("width",i)}},l={init:function(e){var r=t.extend({},i,e);return this.each(function(){var e=t(this),n=e.attr("id"),s=e.outerHeight(),a=n?n+"-"+i.wrapperClassName:i.wrapperClassName,c=t("<div></div>").attr("id",a).addClass(r.wrapperClassName);e.wrapAll(c);var p=e.parent();r.center&&p.css({width:e.outerWidth(),marginLeft:"auto",marginRight:"auto"}),"right"==e.css("float")&&e.css({"float":"none"}).parent().css({"float":"right"}),p.css("height",s),r.stickyElement=e,r.stickyWrapper=p,r.currentTop=null,o.push(r)})},update:c,unstick:function(){return this.each(function(){for(var e=this,i=t(e),n=-1,s=o.length;s-->0;)o[s].stickyElement.get(0)===e&&(r.call(o,s,1),n=s);-1!=n&&(i.unwrap(),i.css({width:"",position:"",top:"","float":""}))})}};window.addEventListener?(window.addEventListener("scroll",c,!1),window.addEventListener("resize",p,!1)):window.attachEvent&&(window.attachEvent("onscroll",c),window.attachEvent("onresize",p)),t.fn.sticky=function(r){return l[r]?l[r].apply(this,e.call(arguments,1)):"object"!=typeof r&&r?void t.error("Method "+r+" does not exist on jQuery.sticky"):l.init.apply(this,arguments)},t.fn.unstick=function(r){return l[r]?l[r].apply(this,e.call(arguments,1)):"object"!=typeof r&&r?void t.error("Method "+r+" does not exist on jQuery.sticky"):l.unstick.apply(this,arguments)},t(function(){setTimeout(c,0)})}(jQuery);
+
+jQuery(document).ready(function( $ ) {
+
+    $(".header-menu-sticky #site-navigation").sticky({topSpacing:0,responsiveWidth:true});
+
+	if( jQuery.isFunction($().magnificPopup) ) {
+
+		$('.elementor-popup-with-form').magnificPopup({
+			type: 'inline',
+			preloader: false,
+			focus: '#name',
+
+			// When elemened is focused, some mobile browsers in some cases zoom in
+			// It looks not nice, so we disable it:
+			callbacks: {
+				beforeOpen: function() {
+					if($(window).width() < 700) {
+						this.st.focus = false;
+					} else {
+						this.st.focus = '#name';
+					}
+				}
+			}
+		});
+
+		$('.elementor-image-popup a').each(function (index, value){
+			$(this).magnificPopup({
+				type: 'image',
+				closeOnContentClick: true,
+				mainClass: 'mfp-img-mobile',
+				image: {
+					verticalFit: true
+				}
+				
+			});
+		});
+
+		$('.elementor-image-gallery-popup, .elementor-image-carousel-popup').each(function (index, value){
+			$(this).magnificPopup({
+				delegate: 'a',
+				type: 'image',
+				tLoading: 'Loading image #%curr%...',
+				mainClass: 'mfp-img-mobile',
+				gallery: {
+					enabled: true,
+					navigateByImgClick: true,
+					preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+				},
+				image: {
+					tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+				}
+			});
+		});
+		
+	}
+
+	if( jQuery.isFunction($().webuiPopover) ) {
+		$('.elementor-button-popover').webuiPopover({trigger:'hover',style:'inverse','width':250});
+	}
+
+});
+
+/*
+     FILE ARCHIVED ON 16:06:12 May 29, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:05:32 Jun 06, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 82.478 (3)
+  esindex: 0.007
+  captures_list: 109.721
+  CDXLines.iter: 12.699 (3)
+  PetaboxLoader3.datanode: 487.325 (5)
+  exclusion.robots: 0.355
+  exclusion.robots.policy: 0.339
+  RedisCDXSource: 10.192
+  PetaboxLoader3.resolve: 170.925
+  load_resource: 583.766
+*/
