@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)http://socisuite.com/members/pagetab/app_storefront/index.php?pid=3358&lp=1 -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>1001 Brand Identity Kit - Rizky D</title>
+		
+		<meta property="og:title" content="1001 Brand Identity Kit - Rizky D">
+		<meta property="og:url" content="http://socisuite.com/members/pagetab/app_storefront/index.php?pid=3358">
+		
+		<link rel="stylesheet" href="./index_files/style.css">
+		<link rel="stylesheet" href="./index_files/screen.css">
+		<link rel="stylesheet" href="./index_files/animation.css" type="text/css">
+		 <script src="./index_files/all.js.download" async="" crossorigin="anonymous"></script><script type="text/javascript" src="./index_files/jquery.js.download"></script>
+		<script language="javascript">
+		function loadPage()
+		{
+		var oDiv1 = document.getElementById('ldiv1');
+		oDiv1.style.display = 'none';
+		oDiv1.style.visibility = 'hidden';
+		document.onkeydown = null;
+		}
+		function loadmyPage()
+		{
+		// var oDiv1 = document.getElementById('ldiv1');
+		//document.getElementById('ldiv1').style.display = 'block';
+		// oDiv1.style.visibility = 'visible';
+		// document.onkeydown = null;
+		}
+		function showeditor(val)
+		{
+		
+		}
+		function validateEmail(email)
+		{
+			var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+			if (filter.test(email)) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+		function smsformsubmit_old(key)
+		{
+			var inemail = document.getElementById('smsemail_'+key).value;	
+			var redurl = document.getElementById('smsredurl_'+key).value;	
+			
+			if(validateEmail(inemail))
+			{
+			window.location = window.location.href + '&optin=1&email='+inemail+'&redurl='+redurl+'&keyid='+key;
+			}
+			else
+			{
+				document.getElementById("smsemail_"+key).style.border="2px solid red"; 
+				document.getElementById ("smsemail_"+key).value = '';
+				document.getElementById ("smsemail_"+key).placeholder = "Invalid email id";
+			}
+		}
+		function smsformsubmit(key)
+		{
+			var redurl="";
+			var faction=3;
+			var redurl,emailid,phone,city;
+			var fname = "Friend";
+			if(document.getElementById('smsemail_'+key).value){
+				var emailid = document.getElementById('smsemail_'+key).value;
+				var emailid = emailid.trim();
+			}
+			if(document.getElementById('smsredurl_'+key).value)var redurl = document.getElementById('smsredurl_'+key).value;
+			if(document.getElementById('sms_faction_'+key).value)var faction = document.getElementById('sms_faction_'+key).value;
+			if(document.getElementById('smsname_'+key).value)var fname = document.getElementById('smsname_'+key).value;
+			if(document.getElementById('smsphone_'+key).value)var phone = document.getElementById('smsphone_'+key).value;
+			if(document.getElementById('smscity_'+key).value)var city = document.getElementById('smscity_'+key).value;
+			
+			if(validateEmail(emailid))
+			{	
+				document.getElementById("smsemail_"+key).style.border="1px solid #ccc"; 
+								//$("#optin_btn_txt").val("Subscribing...");
+				if(redurl != "" && faction == 2)
+				{
+					setTimeout(function() {
+						top.location.href=redurl;
+					}, 2000);
+				}
+				else if(faction == 1)
+				{
+					$("#frm2_wrap_" + key + " .frm_com").hide();
+					$("#sms_tytext_" + key).show();
+				}
+				jQuery.getJSON("//socisuite.com/members/ajax/addsubscriber_fromgallery_json.php?type=ongallery&email="+emailid+"&fname="+fname+"&phone="+phone+"&city="+city+"&cid=3358&format=json&jsoncallback=?",
+				function(data)
+				{
+					if(data.success == '1')
+					{
+						//$("#optin_success_txt").show();
+						//$("#optin_form_holder").hide();
+					}
+					else if(data.response == 'Invalid'){	
+					}
+				});
+			}
+			else
+			{
+				document.getElementById("smsemail_"+key).style.border="2px solid red"; 
+				document.getElementById ("smsemail_"+key).value = '';
+				document.getElementById ("smsemail_"+key).placeholder = "Invalid email id";
+			}
+		 
+		}
+
+		function trim(text) {
+			return text.replace(/^\s+|\s+$/g, "");
+		}
+	
+		</script>
+		<style>	
+		.fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe, .fb-comments iframe[style] 
+		{
+			width: 100% !important;
+		}
+		.ldiv {
+		background-color: rgba(0,0,0,0.8);
+		height: 100%;
+		position: fixed;
+		width: 100%;
+		z-index: 1000;
+		top: 0;
+		left: 0;
+		}
+		
+		.ldiv span {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-ms-transform: translate(-50%,-50%); /* IE 9 */
+			-webkit-transform: translate(-50%,-50%); /* Safari */
+			transform: translate(-50%,-50%);
+			color: #FFF;
+			text-align: center;
+		}
+		
+		.custom_bg {
+			/* max-width: 810px; */
+			width: 100%;
+		}
+		
+		/*BG color,gradient,image starts */
+				
+						.bd_bg {background:#fff;}
+				
+		/*BG color,gradient,image ends */
+		
+		
+		/*BG color,gradient,image starts */
+				
+						.custom_bg {background:#fff;}
+				
+		/*BG color,gradient,image ends */
+		</style>
+			<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#1d3c78;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
+	<body onload="JavaScript: loadPage(); return false;" class="pid3358: bd_bg">
+							<div style="margin: 0 auto;padding: 0 !important;max-width: 810px;width: 100%;">
+								<div class="ldiv" name="ldiv1" id="ldiv1" style="display: none; visibility: hidden;">
+				<span><b>Loading...</b><br><img src="./index_files/loadingAnimation.gif" alt="Loading..."></span>
+				</div>
+				<div class="ldiv" id="ldiv2" style="display:none;">
+				<span><b>Loading...</b><br><img src="./index_files/loadingAnimation.gif" alt="Loading..."></span>
+				</div>
+				<!-- the div has to come first which forces the JS include and code to be put below it -->
+				<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./index_files/xd_arbiter.html" style="border: none;" __idm_frm__="3970"></iframe></div><div></div></div></div>
+				<!-- then we have to include the all.js file -->
+				<script src="./index_files/all.js(1).download" type="text/javascript"></script>
+				<!-- and finally we can use the FB JS SDK and it will actually work :) -->
+				<script type="text/javascript" charset="utf-8">
+					FB.init({
+						appId: '420325334820055', 
+						status: true, 
+						cookie: true, 
+						xfbml: true
+					});
+
+					window.fbAsyncInit = function () {
+					FB.Event.subscribe('edge.create',
+					function(response) {
+					//parent.location = '';
+					}
+					);
+					FB.Event.subscribe('edge.remove',
+					function(response) {
+					//parent.location = '';
+					}
+					);
+					};
+					jQuery(window).load(function(){
+						//resize our tab app canvas after our content has finished loading
+					   // FB.Canvas.setSize({height: 'auto'});
+						 FB.Canvas.setAutoGrow();
+					});
+						
+				</script>
+
+								<div class="left custom_bg">
+					<div class="main_content left">
+						<style>
+/*.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget iframe[style]  {width: 100% !important;}*/
+</style>
+<div id="tblock_eQdOr" style="background:#751507;" class="tbedt aq_header span12" onclick="showeditor(&#39;eQdOr&#39;);">
+	<div><p style="text-align:center"><span style="font-size:28px"><span style="color:#ffffff; font-family:open sans,serif">HASILKAN&nbsp;</span><span style="color:#ffcc00; font-family:open sans,serif"><strong>LEBIH BANYAK</strong></span><span style="color:#ffffff; font-family:open sans,serif">&nbsp;PELANGGAN&nbsp;</span></span></p>  <p style="text-align:center"><span style="color:#ffffff; font-family:open sans,serif; font-size:28px">DENGAN BRAND PERUSAHAAN YANG&nbsp;</span><span style="color:#ffcc00; font-family:open sans,serif; font-size:28px"><strong>LEBIH </strong></span></p>  <p style="text-align:center"><span style="color:#ffcc00; font-family:open sans,serif; font-size:28px"><strong>MENJUAL</strong>,&nbsp;</span><span style="color:#ffffff; font-family:open sans,serif; font-size:28px">ELEGAN, DAN&nbsp;</span><span style="color:#ffffff; font-family:open sans,serif; font-size:28px">TERPERCAYA</span></p>  <div> <p style="text-align:center"><span style="color:#ffffff; font-family:open sans,serif; font-size:26px">Saatnya Bisnis Anda&nbsp;</span><span style="color:#ffcc00; font-family:open sans,serif; font-size:26px"><strong>Naik Kelas!</strong></span></p> </div> </div>
+	</div><div id="tblock_fDx6O" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelfDx6O">
+                
+		            		<img class="bor" src="./index_files/1 (51).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_g9BGf" style="background:;" class="astext tbedt inner_content1 left span12">
+	<div class="con1 fullwidth" style="padding:2%;min-width:96%;">
+				<div class="fullwidth">
+							<div><p style="text-align:center"><span style="font-size:20px"><strong>Sebelum Anda baca sampai selesai, Anda boleh perhatikan gambar-gambar di bawah ini</strong></span></p> </div>
+								</div>
+	</div>
+</div><div id="tblock_sGX22" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelsGX22">
+                
+		            		<img class="bor" src="./index_files/2 (50).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_fwGs4" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelfwGs4">
+                
+		            		<img class="bor" src="./index_files/3 (12).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_VBWw1" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelVBWw1">
+                
+		            		<img class="bor" src="./index_files/4 (15).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_sE77U" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelsE77U">
+                
+		            		<img class="bor" src="./index_files/5 (13).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_9rDjE" style="background:;" class="astext tbedt inner_content1 left span12">
+	<div class="con1 fullwidth" style="padding:2%;min-width:96%;">
+				<div class="fullwidth">
+							<div><p style="text-align:center"><span style="font-size:18px">Pertanyaannya, apa&nbsp;<strong>kesamaan</strong>&nbsp;dari perusahaan-perusahaan tersebut di atas?</span></p>  <p style="text-align:center"><span style="font-size:18px">Jika jawaban Anda &nbsp;adalah “Brand” yang Menjual, maka artinya Anda mulai paham bagaimana pentingnya&nbsp;<strong>Brand Identity</strong>&nbsp;untuk kemajuan bisnis Anda.</span></p> </div>
+								</div>
+	</div>
+</div><div id="tblock_0aTDX" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabel0aTDX">
+                
+		            		<img class="bor" src="./index_files/1 (53).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_tyXi7" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabeltyXi7">
+                
+		            		<img class="bor" src="./index_files/2 (51).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_9s0tZ" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabel9s0tZ">
+                
+		            		<img class="bor" src="./index_files/mockup-brand-identity-3pcs.jpg" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_HzfTo" style="background:;" class="astext tbedt inner_content1 left span12">
+	<div class="con1 fullwidth" style="padding:2%;min-width:96%;">
+				<div class="fullwidth">
+							<div><p style="text-align:center"><span style="font-size:18px"><strong>Inilah Investasi Terbaik Anda untuk Memulai Kegiatan Branding Bisnis Anda Melalui&nbsp;Brand Identity</strong></span></p> </div>
+								</div>
+	</div>
+</div><div id="tblock_Mp4fj" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelMp4fj">
+                
+		            		<img class="bor" src="./index_files/3 (13).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_WawCl" style="background:;" class="astext tbedt inner_content1 left span12">
+	<div class="con1 fullwidth" style="padding:2%;min-width:96%;">
+				<div class="fullwidth">
+							<div><h1 style="text-align:center"><span style="font-size:22px"><span style="font-family:inherit"><strong>Tidak ada&nbsp;<u>bisnis besar</u>&nbsp;yang tidak peduli pada&nbsp;<u>Brand Identity</u>.</strong>&nbsp;</span></span></h1>  <p style="text-align:center"><span style="font-size:18px"><span style="color:#3a3a3a; font-family:open sans,serif">Maka&nbsp;<u>jika Anda ingin membesarkan bisnis Anda</u>, pastikan Anda mendesain dan&nbsp;<u>miliki Brand Identity Anda secara profesional</u>.&nbsp;</span></span></p>  <p style="text-align:center"><span style="font-size:18px"><span style="color:#3a3a3a; font-family:open sans,serif">Memang TIDAK mudah untuk membuatnya apalagi jika Anda tidak punya pengalaman di bidang desain Branding Identity.&nbsp;</span></span></p>  <p style="text-align:center"><span style="font-size:18px"><span style="color:#3a3a3a; font-family:open sans,serif">Kalau Anda menyewa jasa desainer profesional untuk membuat desain Brand Identity ini,&nbsp;<strong>harganya mahal.</strong></span></span></p> </div>
+								</div>
+	</div>
+</div><div id="tblock_32bZZ" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabel32bZZ">
+                
+		            		<img class="bor" src="./index_files/3 (14).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_d12BA" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabeld12BA">
+                
+		            		<img class="bor" src="./index_files/4 (16).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_UyM7W" style="background:#000000;" class="astext tbedt inner_content1 left span12">
+	<div class="con1 fullwidth" style="padding:2%;min-width:96%;">
+				<div class="fullwidth">
+							<div><h1 style="text-align:center"><span style="font-size:22px"><span style="color:#ffffff; font-family:inherit"><strong>1001 BRAND IDENTITY KIT&nbsp;AKAN MENJADI SOLUSI </strong></span></span></h1>  <h1 style="text-align:center"><span style="font-size:22px"><span style="color:#ffffff; font-family:inherit"><strong>BRANDING BISNIS ANDA MULAI SEKARANG!</strong></span></span></h1> </div>
+								</div>
+	</div>
+</div><div id="tblock_RDx4K" style="background:;" class="tbedt clr clear_block span12 clearfix">
+        <div style="height:10px" class="cf"></div>
+    </div>
+
+<div id="tblock_RrFBs" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelRrFBs">
+                
+		            		<img class="bor" src="./index_files/5 (14).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_RJ7ED" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelRJ7ED">
+                
+		            		<img class="bor" src="./index_files/6 (8).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_BEJox" style="background:#1e73be;" class="astext tbedt inner_content1 left span12">
+	<div class="con1 fullwidth" style="padding:2%;min-width:96%;">
+				<div class="fullwidth">
+							<div><h1 style="text-align:center"><span style="font-size:18px"><span style="font-family:inherit"><strong>Saya paham sekali, Anda tentu tidak ingin beli&nbsp;<span style="color:#ffffff; font-family:inherit">‘Kucing dalam Karung’</span>. Karenanya, Saya akan memperlihatkan beberapa jenis Template 1001 Brand Identity Kit&nbsp;yang akan Anda dapatkan.</strong></span></span></h1> </div>
+								</div>
+	</div>
+</div><div id="tblock_FciZa" style="background:;" class="tbedt clr clear_block span12 clearfix">
+        <div style="height:10px" class="cf"></div>
+    </div>
+
+<div id="tblock_uT45r" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabeluT45r">
+                
+		            		<img class="bor" src="./index_files/1 (54).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_rceWZ" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelrceWZ">
+                
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_FTWh9" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelFTWh9">
+                
+		            		<img class="bor" src="./index_files/3 (15).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_1R2Yc" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabel1R2Yc">
+                
+		            		<img class="bor" src="./index_files/4 (17).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_xVv14" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelxVv14">
+                
+		            		<img class="bor" src="./index_files/5 (15).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_dYKaX" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabeldYKaX">
+                
+		            		<img class="bor" src="./index_files/6 (9).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_ElqiY" style="background:;" class="astext tbedt inner_content1 left span12">
+	<div class="con1 fullwidth" style="padding:2%;min-width:96%;">
+				<div class="fullwidth">
+							<div><p style="text-align:center"><span style="font-size:20px"><strong><span style="color:#3a3a3a; font-family:open sans,serif">Jangan dulu buru-buru beli, sebelum Anda ketahui&nbsp;</span><span style="color:#ffcc00; font-family:open sans,serif">BONUS ISTIMEWA</span><span style="color:#3a3a3a; font-family:open sans,serif">&nbsp;yang akan kami berikan&nbsp;kepada Anda saat membeli 1001 Brand Identity Kit&nbsp;ini:</span></strong></span></p> </div>
+								</div>
+	</div>
+</div><div id="tblock_0Ogyj" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabel0Ogyj">
+                
+		            		<img class="bor" src="./index_files/1 (55).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_cCnLC" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelcCnLC">
+                
+		            		<img class="bor" src="./index_files/2 (54).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_nwcKp" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelnwcKp">
+                
+		            		<img class="bor" src="./index_files/3 (16).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_q6xFL" style="background:;" class="astext tbedt inner_content1 left span12">
+	<div class="con1 fullwidth" style="padding:2%;min-width:96%;">
+				<div class="fullwidth">
+							<div><div style="text-align: center;"> <div> <h1><span style="font-size:22px"><strong><strong><strong><span style="font-family:inherit"><strong><span style="color:#0000ff; font-family:inherit">Total Bonus yang Anda dapatkan senilai</span>&nbsp;<span style="color:#ff0000; font-family:inherit">Rp&nbsp;7.743.500</span></strong></span></strong></strong></strong></span></h1> </div> </div> </div>
+								</div>
+	</div>
+</div><div id="tblock_vi6g1" style="background:;" class="astext tbedt inner_content1 left span12">
+	<div class="con1 fullwidth" style="padding:2%;min-width:96%;">
+				<div class="fullwidth">
+							<div><div style="text-align: center;"> <div><span style="font-size:18px"><strong><strong>Dari cara Anda membaca sejauh ini, maka&nbsp;<u>Anda adalah orang yang amat peduli dengan brand perusahaan Anda</u>. Tidak ada keraguan mengenai itu. Maka&nbsp;<u><strong>miliki Brand Identity sekarang!</strong></u></strong></strong></span></div> </div> </div>
+								</div>
+	</div>
+</div><div id="tblock_673ZA" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabel673ZA">
+                
+				
+				<div class="align_center m_top2">
+			<a href="http://www.1001brandidentitykit.com/s/sy49pqz/" target="_blank">
+								<img src="./index_files/beli-sekarang-juga (2).png" alt="" style="max-width:70%;height:auto;">
+							</a>
+		</div>
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_2kSGP" style="background:#eeee22;" class="astext tbedt inner_content1 left span12">
+	<div class="con1 fullwidth" style="padding:2%;min-width:96%;">
+				<div class="fullwidth">
+							<div><p style="text-align:center"><span style="font-size:16px"><strong>Gunakan kupon "<span style="color:#0000ff">MASUKKAN KUPON ANDA DISINI</span>" untuk mendapatkan diskon 50% dan BONUS SPESIAL</strong></span></p> </div>
+								</div>
+	</div>
+</div><div id="tblock_D0GCf" style="background:;" class="tbedt clr clear_block span12 clearfix">
+        <div style="height:15px" class="cf"></div>
+    </div>
+
+<div id="tblock_5W2KX" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabel5W2KX">
+                
+		            		<img class="bor" src="./index_files/1 (56).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_uh2Ey" style="background:#000000;" class="astext tbedt inner_content1 left span12">
+	<div class="con1 fullwidth" style="padding:2%;min-width:96%;">
+				<div class="fullwidth">
+							<div><div style="text-align: center;"> <div> <h1><strong><strong><span style="color:#ffcc00; font-family:inherit; font-size:inherit"><strong>“Ya, Saya ingin memiliki 1001 Brand Identity ini. Berapa harganya?”</strong></span></strong></strong></h1> </div> </div> </div>
+								</div>
+	</div>
+</div><div id="tblock_C98Wl" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelC98Wl">
+                
+		            		<img class="bor" src="./index_files/mockup-brand-identity-3pcs (2).jpg" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_cH0iZ" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelcH0iZ">
+                
+				
+				<div class="align_center m_top2">
+			<a href="http://www.1001brandidentitykit.com/s/sy49pqz/" target="_blank">
+								<img src="./index_files/beli-sekarang (10).png" alt="" style="max-width:70%;height:auto;">
+							</a>
+		</div>
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_Sv5vo" style="background:#eeee22;" class="astext tbedt inner_content1 left span12">
+	<div class="con1 fullwidth" style="padding:2%;min-width:96%;">
+				<div class="fullwidth">
+							<div><p style="text-align:center"><span style="font-size:16px"><strong>Gunakan kupon "<span style="color:#0000ff">50TODAY</span>" untuk mendapatkan diskon 50% dan BONUS SPESIAL</strong></span></p> </div>
+								</div>
+	</div>
+</div><div id="tblock_Hsl8p" style="background:;" class="tbedt clr clear_block span12 clearfix">
+        <div style="height:20px" class="cf"></div>
+    </div>
+
+<div id="tblock_W8rrr" style="background:#000000;" class="astext tbedt inner_content1 left span12">
+	<div class="con1 fullwidth" style="padding:2%;min-width:96%;">
+				<div class="fullwidth">
+							<div><div style="text-align: center;"> <div><span style="font-size:18px"><strong><strong><span style="color:#ffcc00; font-family:inherit"><strong><span style="font-family:inherit">Satu lagi KABAR GEMBIRA !<br> <br> Bagi 50 Pembeli Pertama yang membeli dengan menggunakan kupon "</span></strong></span><span style="color:#ffffff"><span style="font-family:inherit"><strong><span style="font-family:inherit">50TODAY</span></strong></span></span><span style="color:#ffcc00; font-family:inherit"><strong><span style="font-family:inherit">"<br> <br> Kami berikan lagi BONUS SPESIAL untuk Anda</span></strong></span></strong></strong></span></div> </div> </div>
+								</div>
+	</div>
+</div><div id="tblock_S77h9" style="background:;" class="tbedt clr clear_block span12 clearfix">
+        <div style="height:5px" class="cf"></div>
+    </div>
+
+<div id="tblock_OWtDz" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelOWtDz">
+                
+		            		<img class="bor" src="./index_files/1 (57).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_IR2iI" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelIR2iI">
+                
+		            		<img class="bor" src="./index_files/2 (55).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_HQzfl" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelHQzfl">
+                
+		            		<img class="bor" src="./index_files/3 (17).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_OICRj" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelOICRj">
+                
+		            		<img class="bor" src="./index_files/4 (18).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_7YjLD" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabel7YjLD">
+                
+		            		<img class="bor" src="./index_files/5 (16).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_XDZLB" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelXDZLB">
+                
+		            		<img class="bor" src="./index_files/6 (10).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_pFWiU" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelpFWiU">
+                
+		            		<img class="bor" src="./index_files/7 (6).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_xHJGi" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelxHJGi">
+                
+		            		<img class="bor" src="./index_files/8 (2).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_nIRHx" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelnIRHx">
+                
+		            		<img class="bor" src="./index_files/9 (4).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_mo38x" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabelmo38x">
+                
+		            		<img class="bor" src="./index_files/10 (1).png" alt="" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                              
+                <br clear="all">
+				
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_9rCyp" style="background:;" class="tbedt clr clear_block span12 clearfix">
+        <div style="height:10px" class="cf"></div>
+    </div>
+
+<div id="tblock_MiRVT" style="background:;" class="astext tbedt inner_content1 left span12">
+	<div class="con1 fullwidth" style="padding:2%;min-width:96%;">
+				<div class="fullwidth">
+							<div><div> <div style="text-align:center"> <div><span style="font-size:24px"><strong>Bagaimana Cara&nbsp;<strong><span style="color:#2f4974; font-family:inherit">"Claim"</span>&nbsp;Bonus Anda?</strong></strong></span></div>  <div>&nbsp;</div> </div> </div>  <div> <div><span style="font-size:18px">1. Bersihkan cookies browser anda<br> 2. Klik link&nbsp;"<strong><a href="http://www.1001brandidentitykit.com/s/sy49pqz/" style="border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; color: #3a3a3a; transition: all 300ms !important;"><span style="color:#0000ff">BELI SEKARANG</span></a></strong>"&nbsp;<br> 3. Gunakan kupon&nbsp;"<strong>50TODAY</strong>"&nbsp;didata pembelian Anda&nbsp;</span></div>  <div><span style="font-size:18px">4. Setelah akun Anda aktif, segera ambil super Bonus Anda dengan mengkonfirmasi bukti orderan Anda&nbsp;kesini :</span></div>  <ul> 	<li><span style="font-size:18px">SMS Saya : 0812 9684 1515</span></li> 	<li><span style="font-size:18px">Email Saya : bangcoco15@gmail.com</span></li> 	<li><span style="font-size:18px">Cukup Copy Paste : "Mas, Saya sudah beli 1001 Identity Kit, mohon kirim Bonusnya Terima Kasih."</span></li> </ul> </div> </div>
+								</div>
+	</div>
+</div><div id="tblock_9vAvB" style="background:;" class="tbedt asproductimg inner_content1 left m_top1 span12">
+		<div class="con1 left featlabel9vAvB">
+                
+				
+				<div class="align_center m_top2">
+			<a href="http://www.1001brandidentitykit.com/s/sy49pqz/" target="_blank">
+								<img src="./index_files/beli-sekarang (11).png" alt="" style="max-width:70%;height:auto;">
+							</a>
+		</div>
+			</div>
+	<div class="con1 left">
+				<div class="">
+								</div>
+	</div>
+</div><div id="tblock_SiqMl" style="background:#eeee22;" class="astext tbedt inner_content1 left span12">
+	<div class="con1 fullwidth" style="padding:2%;min-width:96%;">
+				<div class="fullwidth">
+							<div><p style="text-align:center"><span style="font-size:16px"><strong>Gunakan kupon "<span style="color:#0000ff">50TODAY</span>" untuk mendapatkan diskon 50% dan BONUS SPESIAL</strong></span></p> </div>
+								</div>
+	</div>
+</div><div id="tblock_lIGHl" style="background:;" class="tbedt clr clear_block span12 clearfix">
+        <div style="height:30px" class="cf"></div>
+    </div>
+
+<div id="tblock_V3n07" style="background:#183245;" class="tbedt mr tcenter aq_footer span12" onclick="showeditor(&#39;V3n07&#39;);">
+    <div style="padding:10px;">
+        <div><p style="text-align:center"><span style="color:#FFFFFF">Copyright 2019 | </span><a href="http://plussgroup.com/"><span style="color:#FFFFFF">B</span></a><span style="color:#FFFFFF">angCoco</span></p> </div>
+	    </div>
+</div>
+					</div>
+					<br clear="all">
+				</div>
+				<div class="clear"></div>
+			</div>
+					
+</body></html>

@@ -1,0 +1,99 @@
+/*.span12 { width: 780px; margin-left: 1.5%; }
+.span11 { width: 715px; }
+.span10 { width: 650px; }
+.span9 { width: 585px; }
+.span8 { width: 520px; }
+.span7 { width: 455px; }
+.span6 { width: 390px; }
+.span5 { width: 325px; }
+.span4 { width: 260px; }
+.span3 { width: 195px; }
+.span2 { width: 130px; margin-left:0.5%;}
+.span1 { width: 65px; }
+
+[class*="span"] {
+float: left;
+
+}
+*/
+.span12 { width: 810px;margin: 0 !important; }
+.span11 { width: 719px; }
+.span10 { width: 659px; }
+.span9 { width: 591px; }
+.span8 { width: 525px; }
+.span7 { width: 468px; }
+.span6 { width: 392px; }
+.span5 { width: 316px; }
+.span4 { width: 259px; }
+.span3 { width: 192px; }
+.span2 { width: 125px; }
+.span1 { width: 65px; }
+
+[class*="span"] {
+float: left;
+margin-right:8px;
+margin-left:0 !important;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+	.custom_bg {
+		width: 100% !important;
+		padding: 0 !important;
+		margin: 0 !important;
+		clear: both !important;
+		float: none !important;
+		/* background-size: cover !important;
+		-webkit-background-size: cover !important;
+		-moz-background-size: cover !important;
+		-o-background-size: cover !important; */
+		box-sizing: border-box;
+	}
+
+	.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12, iframe {
+		width: 100% !important;
+		padding: 1% !important;
+		margin: 0 !important;
+		clear: both !important;
+		float: left !important;
+		box-sizing: border-box;
+	}
+	
+	.cf {
+		display: none !important;
+	}
+	
+	.video-container {
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 30px; 
+		height: 0; 
+		overflow: hidden;
+	}
+	 
+	.video-container  iframe,
+	.video-container  object,
+	.video-container  embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.main_content {
+		width: 100% !important;
+		padding: 0 !important;
+		margin: 0 !important;
+		clear: both !important;
+		float: left !important;
+	}
+	
+	#form {
+		width: 100% !important;
+		padding: 0 !important;
+		margin: 0 !important;
+		clear: both !important;
+		float: left !important;
+	}
+}
+
