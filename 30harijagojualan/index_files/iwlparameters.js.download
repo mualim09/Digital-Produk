@@ -1,0 +1,44 @@
+/**
+* Copyright (c) 2017-present, Facebook, Inc. All rights reserved.
+*
+* You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+* copy, modify, and distribute this software in source code or binary form for use
+* in connection with the web services and APIs provided by Facebook.
+*
+* As with any software that integrates with the Facebook platform, your use of
+* this software is subject to the Facebook Platform Policy
+* [http://developers.facebook.com/policy/]. This copyright notice shall be
+* included in all copies or substantial portions of the software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+* FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+* COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+* IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+* CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+fbq.registerPlugin("fbevents.plugins.iwlparameters", {__fbEventsPlugin: 1, plugin: function(fbq, instance, config) { /* empty plugin */ }});
+/*
+     FILE ARCHIVED ON 02:31:29 Apr 30, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:43:41 Jun 05, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 337.187 (3)
+  esindex: 0.012
+  captures_list: 478.714
+  CDXLines.iter: 10.725 (3)
+  PetaboxLoader3.datanode: 309.522 (4)
+  exclusion.robots: 124.83
+  xauthn.chkprivs: 0.088
+  exclusion.robots.policy: 124.807
+  RedisCDXSource: 2.194
+  PetaboxLoader3.resolve: 99.946 (2)
+  xauthn.identify: 124.19
+  load_resource: 85.067
+*/
