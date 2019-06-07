@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Gentium Basic';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Gentium Basic Bold'), local('GentiumBasic-Bold'), url(http://web.archive.org/web/20181008232718im_/https://fonts.gstatic.com/s/gentiumbasic/v9/WnzgHAw9aB_JD2VGQVR80We3JLasnT0eaA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(http://web.archive.org/web/20181008232718im_/https://fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+}
+
+/*
+     FILE ARCHIVED ON 23:27:18 Oct 08, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:41:31 Jun 07, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 77.162 (3)
+  esindex: 0.006
+  captures_list: 197.515
+  CDXLines.iter: 13.607 (3)
+  PetaboxLoader3.datanode: 85.44 (5)
+  exclusion.robots: 101.334
+  xauthn.chkprivs: 0.069
+  exclusion.robots.policy: 101.32
+  RedisCDXSource: 2.81
+  PetaboxLoader3.resolve: 67.638 (3)
+  xauthn.identify: 100.903
+  load_resource: 119.009
+*/
