@@ -1,0 +1,55 @@
+/**
+ * File skip-link-focus-fix.js.
+ *
+ * Helps with accessibility for keyboard only users.
+ *
+ * Learn more: https://git.io/vWdr2
+ */
+(function() {
+	var isIe = /(trident|msie)/i.test( navigator.userAgent );
+
+	if ( isIe && document.getElementById && window.addEventListener ) {
+		window.addEventListener( 'hashchange', function() {
+			var id = location.hash.substring( 1 ),
+				element;
+
+			if ( ! ( /^[A-z0-9_-]+$/.test( id ) ) ) {
+				return;
+			}
+
+			element = document.getElementById( id );
+
+			if ( element ) {
+				if ( ! ( /^(?:a|select|input|button|textarea)$/i.test( element.tagName ) ) ) {
+					element.tabIndex = -1;
+				}
+
+				element.focus();
+			}
+		}, false );
+	}
+})();
+
+/*
+     FILE ARCHIVED ON 00:24:57 Jan 20, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:13:49 Jun 07, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 174.848 (3)
+  esindex: 0.01
+  captures_list: 358.59
+  CDXLines.iter: 13.674 (3)
+  PetaboxLoader3.datanode: 54.054 (4)
+  exclusion.robots: 163.141
+  xauthn.chkprivs: 0.053
+  exclusion.robots.policy: 163.127
+  RedisCDXSource: 3.491
+  PetaboxLoader3.resolve: 148.808 (3)
+  xauthn.identify: 162.804
+  load_resource: 95.5
+*/

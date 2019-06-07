@@ -1,0 +1,24 @@
+jQuery.ajax({type:"GET",url:viewsCacheL10n.admin_ajax_url,data:"postviews_id="+viewsCacheL10n.post_id+"&action=postviews",cache:!1});
+/*
+     FILE ARCHIVED ON 23:09:51 Jan 19, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:13:49 Jun 07, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 68.13 (3)
+  esindex: 0.011
+  captures_list: 149.476
+  CDXLines.iter: 12.246 (3)
+  PetaboxLoader3.datanode: 71.23 (4)
+  exclusion.robots: 62.305
+  xauthn.chkprivs: 0.087
+  exclusion.robots.policy: 62.292
+  RedisCDXSource: 3.151
+  PetaboxLoader3.resolve: 67.662 (2)
+  xauthn.identify: 61.774
+  load_resource: 108.482
+*/
