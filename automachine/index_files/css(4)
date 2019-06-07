@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(http://web.archive.org/web/20170428215351im_/http://fonts.gstatic.com/s/roboto/v16/7MygqTe2zs9YkP0adA9QQQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(http://web.archive.org/web/20170428215351im_/http://fonts.gstatic.com/s/roboto/v16/dtpHsbgPEm2lVWciJZ0P-A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(http://web.archive.org/web/20170428215351im_/http://fonts.gstatic.com/s/roboto/v16/W5F8_SL0XFawnjxHGsZjJA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(http://web.archive.org/web/20170428215351im_/http://fonts.gstatic.com/s/roboto/v16/Uxzkqj-MIMWle-XP2pDNAA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://web.archive.org/web/20170428215351im_/http://fonts.gstatic.com/s/roboto/v16/bdHGHleUa-ndQCOrdpfxfw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(http://web.archive.org/web/20170428215351im_/http://fonts.gstatic.com/s/roboto/v16/H1vB34nOKWXqzKotq25pcg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'), url(http://web.archive.org/web/20170428215351im_/http://fonts.gstatic.com/s/roboto/v16/T1xnudodhcgwXCmZQ490TPesZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(http://web.archive.org/web/20170428215351im_/http://fonts.gstatic.com/s/roboto/v16/iE8HhaRzdhPxC93dOdA056CWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Italic'), local('Roboto-Italic'), url(http://web.archive.org/web/20170428215351im_/http://fonts.gstatic.com/s/roboto/v16/hcKoSgxdnKlbH5dlTwKbow.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(http://web.archive.org/web/20170428215351im_/http://fonts.gstatic.com/s/roboto/v16/daIfzbEw-lbjMyv4rMUUTqCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(http://web.archive.org/web/20170428215351im_/http://fonts.gstatic.com/s/roboto/v16/owYYXKukxFDFjr0ZO8NXh6CWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(http://web.archive.org/web/20170428215351im_/http://fonts.gstatic.com/s/roboto/v16/b9PWBSMHrT2zM5FgUdtu0aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+
+/*
+     FILE ARCHIVED ON 21:53:51 Apr 28, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:27:31 Jun 06, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 696.707 (3)
+  esindex: 0.005
+  captures_list: 1075.84
+  CDXLines.iter: 55.891 (3)
+  PetaboxLoader3.datanode: 683.28 (4)
+  exclusion.robots: 145.262
+  xauthn.chkprivs: 0.043
+  exclusion.robots.policy: 145.239
+  RedisCDXSource: 42.948
+  PetaboxLoader3.resolve: 93.601
+  xauthn.identify: 144.85
+  load_resource: 154.545
+*/

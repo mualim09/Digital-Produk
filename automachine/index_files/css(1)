@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://web.archive.org/web/20170428220354im_/https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://web.archive.org/web/20170428220354im_/https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+
+/*
+     FILE ARCHIVED ON 22:03:54 Apr 28, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:27:30 Jun 06, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 311.455 (6)
+  esindex: 0.007
+  CDXLines.iter: 100.666 (3)
+  PetaboxLoader3.datanode: 140.658 (7)
+  exclusion.robots: 165.446
+  xauthn.chkprivs: 0.042
+  exclusion.robots.policy: 165.432
+  RedisCDXSource: 8.597
+  PetaboxLoader3.resolve: 62.741
+  xauthn.identify: 165.035
+  load_resource: 81.59
+*/

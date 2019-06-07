@@ -1,0 +1,60 @@
+/**
+ * Makes "skip to content" link work correctly in IE9, Chrome, and Opera
+ * for better accessibility.
+ *
+ * @link http://www.nczonline.net/blog/2013/01/15/fixing-skip-to-content-links/
+ */
+
+ ( function() {
+	var isWebkit = navigator.userAgent.toLowerCase().indexOf( 'webkit' ) > -1,
+		isOpera  = navigator.userAgent.toLowerCase().indexOf( 'opera' )  > -1,
+		isIE     = navigator.userAgent.toLowerCase().indexOf( 'msie' )   > -1;
+
+	if ( ( isWebkit || isOpera || isIE ) && document.getElementById && window.addEventListener ) {
+		window.addEventListener( 'hashchange', function() {
+			var id = location.hash.substring( 1 ),
+				element;
+
+			if ( ! ( /^[A-z0-9_-]+$/.test( id ) ) ) {
+				return;
+			}
+
+			element = document.getElementById( id );
+
+			if ( element ) {
+				if ( ! ( /^(?:a|select|input|button|textarea)$/i.test( element.tagName ) ) ) {
+					element.tabIndex = -1;
+				}
+
+				element.focus();
+
+				// Repositions the window on jump-to-anchor to account for admin bar and border height.
+				window.scrollBy( 0, -53 );
+			}
+		}, false );
+	}
+} )();
+
+/*
+     FILE ARCHIVED ON 06:59:31 Apr 29, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:27:44 Jun 06, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 722.431 (3)
+  esindex: 0.007
+  captures_list: 1578.641
+  CDXLines.iter: 10.747 (3)
+  PetaboxLoader3.datanode: 725.017 (4)
+  exclusion.robots: 167.804
+  xauthn.chkprivs: 0.036
+  exclusion.robots.policy: 167.792
+  RedisCDXSource: 674.89
+  PetaboxLoader3.resolve: 121.681
+  xauthn.identify: 167.409
+  load_resource: 147.936
+*/
