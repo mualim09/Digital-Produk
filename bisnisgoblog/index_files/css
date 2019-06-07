@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(http://web.archive.org/web/20181117095446im_/http://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(http://web.archive.org/web/20181117095446im_/http://fonts.gstatic.com/s/merriweather/v19/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Merriweather Bold'), local('Merriweather-Bold'), url(http://web.archive.org/web/20181117095446im_/http://fonts.gstatic.com/s/merriweather/v19/u-4n0qyriQwlOrhSvowK_l52xwNZWMf_.ttf) format('truetype');
+}
+
+/*
+     FILE ARCHIVED ON 09:54:46 Nov 17, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:04:42 Jun 07, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 140.557 (3)
+  esindex: 0.019
+  captures_list: 260.478
+  CDXLines.iter: 21.02 (3)
+  PetaboxLoader3.datanode: 63.648 (4)
+  exclusion.robots: 87.051
+  xauthn.chkprivs: 0.092
+  exclusion.robots.policy: 87.037
+  RedisCDXSource: 3.374
+  PetaboxLoader3.resolve: 68.313 (2)
+  xauthn.identify: 86.498
+  load_resource: 95.87
+*/
