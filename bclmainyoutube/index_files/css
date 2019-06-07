@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Oregano';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oregano'), local('Oregano-Regular'), url(http://web.archive.org/web/20160203234611im_/http://fonts.gstatic.com/s/oregano/v4/GaqSW5oe63mN1W7SfZsb3A.ttf) format('truetype');
+}
+
+/*
+     FILE ARCHIVED ON 23:46:11 Feb 03, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:55:09 Jun 07, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 85.306 (3)
+  esindex: 0.018
+  captures_list: 146.056
+  CDXLines.iter: 19.529 (3)
+  PetaboxLoader3.datanode: 167.713 (5)
+  exclusion.robots: 0.334
+  exclusion.robots.policy: 0.318
+  RedisCDXSource: 9.139
+  PetaboxLoader3.resolve: 243.733 (3)
+  load_resource: 369.001
+*/
