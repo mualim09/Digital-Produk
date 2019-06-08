@@ -1,0 +1,50 @@
+/**
+ * Makes "skip to content" link work correctly in IE9, Chrome, and Opera
+ * for better accessibility.
+ *
+ * @link http://www.nczonline.net/blog/2013/01/15/fixing-skip-to-content-links/
+ */
+
+( function() {
+	var ua = navigator.userAgent.toLowerCase();
+
+	if ( ( ua.indexOf( 'webkit' ) > -1 || ua.indexOf( 'opera' ) > -1 || ua.indexOf( 'msie' ) > -1 ) &&
+		document.getElementById && window.addEventListener ) {
+
+		window.addEventListener( 'hashchange', function() {
+			var element = document.getElementById( location.hash.substring( 1 ) );
+
+			if ( element ) {
+				if ( ! /^(?:a|select|input|button|textarea)$/i.test( element.nodeName ) ) {
+					element.tabIndex = -1;
+				}
+
+				element.focus();
+			}
+		}, false );
+	}
+} )();
+
+/*
+     FILE ARCHIVED ON 19:43:29 May 31, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:02:01 Jun 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 149.299 (3)
+  esindex: 0.01
+  captures_list: 481.159
+  CDXLines.iter: 16.441 (3)
+  PetaboxLoader3.datanode: 288.87 (5)
+  exclusion.robots: 298.265
+  xauthn.chkprivs: 0.09
+  exclusion.robots.policy: 298.25
+  RedisCDXSource: 12.863
+  PetaboxLoader3.resolve: 136.491 (2)
+  xauthn.identify: 297.775
+  load_resource: 344.814
+*/

@@ -1,0 +1,29 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["4p6n3"]); }
+
+__d("CommentEmbedPluginActions",[],function a(b,c,d,e,f,g){c.__markCompiled&&c.__markCompiled();f.exports={COMMENT_EMBED_REPLY:"comment_embed_reply",COMMENT_EMBED_LIKE:"comment_embed_like",COMMENT_EMBED_UNLIKE:"comment_embed_unlike"};},null);
+__d('CommentEmbedPluginActionsTypedLogger',['Banzai','GeneratedLoggerUtils','nullthrows'],function a(b,c,d,e,f,g){'use strict';if(c.__markCompiled)c.__markCompiled();function h(){this.clear();}h.prototype.log=function(){c('GeneratedLoggerUtils').log('logger:CommentEmbedPluginActionsLoggerConfig',this.$CommentEmbedPluginActionsTypedLogger1,c('Banzai').BASIC);};h.prototype.logVital=function(){c('GeneratedLoggerUtils').log('logger:CommentEmbedPluginActionsLoggerConfig',this.$CommentEmbedPluginActionsTypedLogger1,c('Banzai').VITAL);};h.prototype.clear=function(){this.$CommentEmbedPluginActionsTypedLogger1={};return this;};h.prototype.updateData=function(j){this.$CommentEmbedPluginActionsTypedLogger1=babelHelpers['extends']({},this.$CommentEmbedPluginActionsTypedLogger1,j);return this;};h.prototype.setCommentEmbedAction=function(j){this.$CommentEmbedPluginActionsTypedLogger1.comment_embed_action=j;return this;};h.prototype.setCommentID=function(j){this.$CommentEmbedPluginActionsTypedLogger1.comment_id=j;return this;};h.prototype.setIsSDK=function(j){this.$CommentEmbedPluginActionsTypedLogger1.is_sdk=j;return this;};h.prototype.setPluginAppID=function(j){this.$CommentEmbedPluginActionsTypedLogger1.plugin_app_id=j;return this;};h.prototype.setRefererURL=function(j){this.$CommentEmbedPluginActionsTypedLogger1.referer_url=j;return this;};h.prototype.setVC=function(j){this.$CommentEmbedPluginActionsTypedLogger1.vc=j;return this;};h.prototype.updateExtraData=function(j){j=c('nullthrows')(c('GeneratedLoggerUtils').serializeMap(j));c('GeneratedLoggerUtils').checkExtraDataFieldNames(j,i);this.$CommentEmbedPluginActionsTypedLogger1=babelHelpers['extends']({},this.$CommentEmbedPluginActionsTypedLogger1,j);return this;};h.prototype.addToExtraData=function(j,k){var l={};l[j]=k;return this.updateExtraData(l);};var i={comment_embed_action:true,comment_id:true,is_sdk:true,plugin_app_id:true,referer_url:true,vc:true};f.exports=h;},null);
+__d('PluginCommentEmbedActionsLogger',['CommentEmbedPluginActions','CommentEmbedPluginActionsTypedLogger','Event'],function a(b,c,d,e,f,g){if(c.__markCompiled)c.__markCompiled();var h={initializeLogger:function(i,j,k,l,m){var n=function(o,p){c('Event').listen(o,'click',function(){new (c('CommentEmbedPluginActionsTypedLogger'))().setCommentEmbedAction(p).setCommentID(i).setRefererURL(j).log();});};if(k)n(k,c('CommentEmbedPluginActions').COMMENT_EMBED_LIKE);if(l)n(l,c('CommentEmbedPluginActions').COMMENT_EMBED_UNLIKE);if(m)n(m,c('CommentEmbedPluginActions').COMMENT_EMBED_REPLY);}};f.exports=h;},null);
+__d('PluginCommentEmbedLikeButton',['Arbiter','CSS','DOM','Event'],function a(b,c,d,e,f,g){if(c.__markCompiled)c.__markCompiled();var h={updateLikeCount:function(i,j,k,l){c('Arbiter').subscribe('embeddedUfiToggle',function(m,n){if(n.storyToken===i){if(n.isLike){l+=1;}else l-=1;c('DOM').setContent(k,l);c('CSS').conditionShow(j,l>0);}});c('Arbiter').subscribe('revertLike',function(m,n){if(n.storyToken===i){l=n.isLike?l-1:l+1;c('DOM').setContent(k,l);c('CSS').conditionShow(j,l>0);}});},initClickHandler:function(i){c('Event').listen(i,'click',function(j){return j.preventDefault();});}};f.exports=h;},null);
+/*
+     FILE ARCHIVED ON 23:13:55 Jul 25, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:42:01 Jun 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 158.655 (3)
+  esindex: 0.011
+  captures_list: 594.751
+  CDXLines.iter: 15.158 (3)
+  PetaboxLoader3.datanode: 750.18 (5)
+  exclusion.robots: 354.794
+  xauthn.chkprivs: 0.088
+  exclusion.robots.policy: 354.775
+  RedisCDXSource: 45.495
+  PetaboxLoader3.resolve: 108.958 (2)
+  xauthn.identify: 354.231
+  load_resource: 770.638
+*/

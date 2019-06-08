@@ -1,0 +1,27 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["gRoMG"]); }
+
+__d('WebCookieUseBannerController',['DOM','DOMQuery','DeferredCookie','Parent'],function a(b,c,d,e,f,g){'use strict';if(c.__markCompiled)c.__markCompiled();var h={init:function(i,j){this.banner=i;this.closeButton=j;this.addPageInteractionListeners();if(j){var k=function(){c('DOM').remove(i);};if(j.addEventListener){j.addEventListener('click',k);}else if(j.attachEvent)j.attachEvent('onclick',k);}},addPageInteractionListeners:function(){var i=function(j){if(this.targetShouldNotBeConsideredConsent(j.getTarget()))return;c('DeferredCookie').flushAllCookies();if(window.removeEventListener){window.removeEventListener('click',i,true);}else if(document.detachEvent)document.detachEvent('onclick',i);}.bind(this);if(window.addEventListener){window.addEventListener('click',i,true);}else if(document.attachEvent)document.attachEvent('onclick',i);c('DeferredCookie').removeDefaultInteractionListener();},targetShouldNotBeConsideredConsent:function(i){if((!this.closeButton||i!==this.closeButton)&&c('DOMQuery').contains(this.banner,i))return true;var j=c('Parent').byAttribute(i,'data-nocookies');if(j)return true;if(i.tagName.toLowerCase()!=='a')i=c('Parent').byTag(i,'a');if(i&&i.href&&i.href.indexOf('/help/cookies')>-1)return true;return false;}};f.exports=h;},null);
+__d('NoscriptOverride',['Cookie','goURI'],function a(b,c,d,e,f,g){if(c.__markCompiled)c.__markCompiled();var h={redirectToJSPage:function(i){c('Cookie').clear('noscript');c('goURI')(i);}};f.exports=h;},null);
+/*
+     FILE ARCHIVED ON 23:14:34 Jul 25, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:42:22 Jun 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 228.039 (3)
+  esindex: 0.007
+  captures_list: 516.944
+  CDXLines.iter: 32.018 (3)
+  PetaboxLoader3.datanode: 93.639 (5)
+  exclusion.robots: 93.471
+  xauthn.chkprivs: 0.068
+  exclusion.robots.policy: 93.437
+  RedisCDXSource: 3.771
+  PetaboxLoader3.resolve: 143.841 (3)
+  xauthn.identify: 92.953
+  load_resource: 144.427
+*/

@@ -1,0 +1,25 @@
+.clearfix:before,.clearfix:after{content:"";display:table}.clearfix:after{clear:both}.clearfix{*zoom:1}.prettycheckbox,.prettyradio{display:inline-block;padding:0;margin:0}.prettycheckbox>a,.prettyradio>a{height:30px;width:30px;display:block;float:left;cursor:pointer;margin:0;background:url('/web/20180531144907im_/http://digzilla.net/wp-content/plugins/instabuilder2/assets/js/prettyCheckable/img/sprites-sfa68604977.png')}.prettycheckbox>a:focus,.prettyradio>a:focus{outline:0 none}.prettycheckbox label,.prettyradio label{display:block;float:left;margin:6px 5px;cursor:pointer}.prettycheckbox a.disabled,.prettycheckbox label.disabled,.prettyradio a.disabled,.prettyradio label.disabled{cursor:not-allowed}.prettycheckbox>a{background-position:0 0}.prettycheckbox>a:focus{background-position:-30px 0}.prettycheckbox>a.checked{background-position:-60px 0}.prettycheckbox>a.checked:focus{background-position:-90px 0}.prettycheckbox>a.checked.disabled{background-position:-150px 0}.prettycheckbox>a.disabled{background-position:-120px 0}.prettyradio>a{background-position:-180px 0}.prettyradio>a:focus{background-position:-210px 0}.prettyradio>a.checked{background-position:-240px 0}.prettyradio>a.checked:focus{background-position:-270px 0}.prettyradio>a.checked.disabled{background-position:-330px 0}.prettyradio>a.disabled{background-position:-300px 0}
+
+/*
+     FILE ARCHIVED ON 14:49:07 May 31, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:01:34 Jun 08, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 195.411 (3)
+  esindex: 0.011
+  captures_list: 336.517
+  CDXLines.iter: 13.637 (3)
+  PetaboxLoader3.datanode: 401.308 (4)
+  exclusion.robots: 118.093
+  xauthn.chkprivs: 0.044
+  exclusion.robots.policy: 118.077
+  RedisCDXSource: 5.601
+  PetaboxLoader3.resolve: 70.908
+  xauthn.identify: 117.726
+  load_resource: 278.928
+*/
