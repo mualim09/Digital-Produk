@@ -1,0 +1,139 @@
+(function($){
+	var defaults = {
+			day: 0,
+			month: 0,
+			year: 0,
+			min: 0,
+			sec: 0,
+			width: 90,
+			offset: 0,
+			onComplete: null
+		},
+		
+		setCountdown = function( $this, options ) {
+			var targetTime,
+				nowTime,
+				diffSecs,
+				utc,
+				nt,
+				d = new Date(options.month + '/' + options.day + '/' + options.year + ' ' + options.hour + ':' + options.min + ':' + options.sec);
+			
+			nt = new Date();
+			
+			targetTime = d;
+			utcNow = nt.getTime() + (nt.getTimezoneOffset() * 60000);
+			nowTime = new Date(utcNow + (3600000 * options.offset));
+			diffSecs = Math.floor( (targetTime.getTime() - nowTime.getTime()) / 1000 );
+			
+			$.data($this[0], 'diffSecs', diffSecs);
+			return diffSecs;
+		},
+
+		doCountDown = function ($this, diffSecs, duration ) {
+			var secs = diffSecs % 60,
+				mins = Math.floor(diffSecs/60)%60,
+				hours = Math.floor(diffSecs/60/60)%24,
+				days = Math.floor(diffSecs/60/60/24),
+				weeks = Math.floor(diffSecs/60/60/24/7);
+			
+			if ( diffSecs <= 0 ) {
+				diffSecs = 0;
+				if ( $.data($this[0], 'ibTimer') ) {
+					clearTimeout($.data($this[0], 'ibTimer'));
+				}
+			}
+		
+			if ( days > 99 ) {
+				days = Math.floor(diffSecs/60/60/24)%7;
+			}
+			
+			dashChangeTo($this, 'seconds_dash', secs, duration ? duration : 800);
+			dashChangeTo($this, 'minutes_dash', mins, duration ? duration : 1200);
+			dashChangeTo($this, 'hours_dash', hours, duration ? duration : 1200);
+			dashChangeTo($this, 'days_dash', days, duration ? duration : 1200);
+			dashChangeTo($this, 'weeks_dash', weeks, duration ? duration : 1200);
+			
+			$.data($this[0], 'diffSecs', diffSecs);
+			if ( diffSecs > 0 ) {
+				var dis = $this;
+				ibt = setTimeout(function() { doCountDown(dis, diffSecs-1) } , 1000);
+				$.data(dis[0], 'ibTimer', ibt);
+			}  else if ( cb = $.data($this[0], 'ibCallback') ) {
+				$.data($this[0], 'ibCallback')();
+			}
+		},
+		
+		dashChangeTo = function($this, dash, n, duration) {
+			for ( var i = ($this.find('.' + dash + ' .digit').length-1); i >= 0; i-- ) {
+				var d = n % 10;
+				n = (n - d) / 10;
+				digitChangeTo('#' + $this.attr('id') + ' .' + dash + ' .digit:eq('+i+')', d, duration);
+			}
+		},
+		
+		digitChangeTo = function (digit, n, duration) {
+			if ( !duration )
+				duration = 800;
+			
+			if ( $(digit + ' div.top').html() != n + '' ) {
+				$(digit + ' div.top').css({'display': 'none'});
+				$(digit + ' div.top').html((n > 0 ? n : '0')).slideDown(duration);
+				$(digit + ' div.bottom').animate({'height': ''}, duration, function() {
+					$(digit + ' div.bottom').html($(digit + ' div.top').html());
+					$(digit + ' div.bottom').css({'display': 'block', 'height': ''});
+					$(digit + ' div.top').hide().slideUp(10);
+				});
+			}
+		},
+		
+		methods = {
+			init : function(options) {
+				var config = defaults;
+				$.extend(config, options);
+	      		return this.each(function(){
+	      			var $this = $(this),
+	      				area_width = config.width,
+	      				diffSecs = setCountdown($this, config),
+	      				daysLeft = Math.floor(diffSecs/60/60/24);
+						hoursLeft = Math.floor(diffSecs/60/60)%24;
+						
+					if ( daysLeft > 99 ) {
+						area_width = area_width * 5;
+						$this.find('.weeks_dash').show();
+					} else {
+						area_width = area_width * 4;
+						$this.find('.weeks_dash').hide();
+					}
+					
+					if ( daysLeft <= 0 ) {
+						area_width = area_width - config.width;
+						$this.find('.days_dash').hide();
+						
+						if ( hoursLeft <= 0 ) {
+							area_width = area_width - config.width;
+							$this.find('.hours_dash').hide();
+						}
+					}
+					
+					$this.css('width', area_width + 'px');
+					
+					if ( config.onComplete ) {
+						$.data($(this)[0], 'ibCallback', config.onComplete);
+					}
+					
+	      			$('#' + $this.attr('id') + ' .digit').html('<div class="top"></div><div class="bottom"></div>');
+	      			doCountDown($this, diffSecs, 500);
+	      		}); 
+	    	}
+		};
+				
+	$.fn.ibCountdown = function (method) {
+		if ( methods[method] ) {
+			return methods[method].apply( this, Array.prototype.slice.call( arguments, 1 ));
+	    } else if ( typeof method === 'object' || !method ) {
+			return methods.init.apply( this, arguments );
+	    } else {
+			$.error( 'Method ' +  method + ' does not exist on ibCountdown' );
+	    }
+	};
+})(jQuery);

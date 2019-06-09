@@ -1,0 +1,441 @@
+/*= FORM REG
+ * --------------------------------------------------*/
+table.insta-form-table {
+	border-collapse: collapse;
+    clear: both;
+    margin-bottom: -8px;
+    margin-top: 0.5em;
+    width: 100%;
+    border: none;
+}
+
+table.insta-form-table td {
+    line-height: 20px;
+    margin-bottom: 9px;
+    padding: 10px;
+    border: none;
+    vertical-align: top;
+}
+
+table.insta-form-table th {
+	line-height: 20px;
+    font-weight: normal;
+    color: #808080;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+table.insta-form-table th {
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+    width: 160px;
+    vertical-align: top;
+    border: none;
+}
+
+/*= CART TABLE
+ * --------------------------------------------------*/
+h3.insta-cart-title {
+	margin:0;
+	padding:0;
+	padding-top: 10px;
+	line-height:1;
+}
+
+table.insta-cart-table {
+	border-collapse: collapse;
+    clear: both;
+    margin-bottom: 16px;
+    margin-top: 0.5em;
+    width: 100%;
+    border: none;
+}
+
+table.insta-cart-table thead th {
+    line-height: 18px;
+    padding:8px;
+    border: 1px solid #FFF;
+    vertical-align: top;
+    background: #808080;
+    color:#FFF !important;
+    font-weight:bold;
+    text-transform: uppercase;
+    text-shadow: none;
+}
+
+table.insta-cart-table tbody tr {
+	background:#F5F5F5;
+}
+
+table.insta-cart-table tbody tr:nth-child(2n+1) {
+	background:#FFF;
+}
+
+table.insta-cart-table tbody th,
+table.insta-cart-table tbody td {
+    padding: 8px;
+    vertical-align: top;
+    border: none;
+}
+
+table.insta-cart-table tbody th {
+	font-size:13px;
+	line-height:18px;
+	text-transform: none;
+	text-shadow:none;
+}
+
+table.insta-cart-table tbody th span {
+	text-transform: none;
+	font-size:14px;
+	font-weight:normal;
+	text-shadow:none;
+}
+
+input.insta-order-btn {
+	font-weight:bold;
+	font-size:18px;
+	padding: 10px;
+	min-width:200px;
+	background-color: #E6E6E6;
+    background-image: -moz-linear-gradient(center top , #F4F4F4, #E6E6E6);
+    background-repeat: repeat-x;
+    border: 1px solid #D2D2D2;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 2px rgba(64, 64, 64, 0.1);
+    color: #7C7C7C;
+}
+
+/*= SHORTCODES
+ * --------------------------------------------------*/
+img.insta-img {
+	margin:0 !important;
+	padding:0 !important;
+	border:none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important; 
+}
+
+.insta-video-shadow {
+	-webkit-box-shadow:  0px 1px 8px 3px rgba(0, 0, 0, 0.2);
+	box-shadow:  0px 1px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+/*= MISC
+ * --------------------------------------------------*/
+.insta-login-label {
+	display:block;
+}
+
+.insta-update-msg {
+	margin: 5px 0 15px;
+    padding: 0 0.6em;
+	border-radius: 3px 3px 3px 3px;
+    background-color: #FFFFE0;
+    border:1px solid #E6DB55;
+}
+
+.insta-error-msg {
+	margin: 5px 0 15px;
+    padding: 0 0.6em;
+	border-radius: 3px 3px 3px 3px;
+    background-color: #ffebe8;
+    border:1px solid #c00;
+}
+
+.insta-update-msg p, .insta-error-msg p {
+	margin: 0.5em 0;
+    padding: 2px;
+}
+.insta-field-error {
+	color:#cc0000;
+	font-style:italic;
+	font-size:12px;
+	
+}
+input.insta-field-error, select.insta-field-error, textarea.insta-field-error {
+	border:1px solid #cc0000;
+	font-style:normal;
+}
+
+
+ul#insta-attach {
+	list-style: none !important;
+	margin:0 !important;
+	padding:0 !important; 
+}
+
+ul#insta-attach li {
+	list-style-type: none !important;
+	margin:0 !important;
+	padding:0 0 0 25px !important;
+	line-height:25px;
+	background: transparent url(../images/attachment_icon.png) no-repeat left center;
+}
+
+/* =DISCOUNT
+-------------------------------------------------------------- */
+.insta-feat-box {
+	margin:10px auto 22px auto;
+	width:75%;
+	background:#FFF url(../images/tiled.png) repeat;
+	-webkit-box-shadow: inset 0px 0px 8px 4px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0px 0px 8px 4px rgba(0, 0, 0, 0.1);
+	border:1px solid #ccc;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;  
+}
+
+.insta-feat-box div {
+	margin:0;
+	padding:10px 25px;
+}
+
+h3.insta-feat-title-green {
+	margin:0;
+	padding:8px 20px !important;
+	text-align:left;
+	font-size:22px;
+	background: #9bc245; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzliYzI0NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3NDljMjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #9bc245 0%, #749c22 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9bc245), color-stop(100%,#749c22)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #9bc245 0%,#749c22 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #9bc245 0%,#749c22 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #9bc245 0%,#749c22 100%); /* IE10+ */
+	background: linear-gradient(top,  #9bc245 0%,#749c22 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bc245', endColorstr='#749c22',GradientType=0 ); /* IE6-8 */
+	-webkit-border-radius: 8px 8px 0px 0px;
+	border-radius: 8px 8px 0px 0px;
+	border-bottom:2px solid #66881c;
+	color:#3d3d3d !important;
+	text-shadow: 1px 1px 1px #b6d96f;
+}
+
+h3.insta-feat-title-blue {
+	margin:0;
+	padding:8px 20px !important;
+	text-align:left;
+	font-size:22px;
+	background: #5c9fd3; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVjOWZkMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzZjdjYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #5c9fd3 0%, #3f7cab 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5c9fd3), color-stop(100%,#3f7cab)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #5c9fd3 0%,#3f7cab 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #5c9fd3 0%,#3f7cab 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #5c9fd3 0%,#3f7cab 100%); /* IE10+ */
+	background: linear-gradient(top,  #5c9fd3 0%,#3f7cab 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c9fd3', endColorstr='#3f7cab',GradientType=0 ); /* IE6-8 */
+	-webkit-border-radius: 8px 8px 0px 0px;
+	border-radius: 8px 8px 0px 0px;
+	border-bottom:2px solid #2d6691;
+	color:#FFF !important;
+	text-shadow: 1px 1px 1px #335a78;
+}
+
+h3.insta-feat-title-red {
+	margin:0;
+	padding:8px 20px !important;
+	text-align:left;
+	font-size:22px;
+	background: #960014; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk2MDAxNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2YzAwMGEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #960014 0%, #6c000a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#960014), color-stop(100%,#6c000a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #960014 0%,#6c000a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #960014 0%,#6c000a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #960014 0%,#6c000a 100%); /* IE10+ */
+	background: linear-gradient(top,  #960014 0%,#6c000a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#960014', endColorstr='#6c000a',GradientType=0 ); /* IE6-8 */
+	-webkit-border-radius: 8px 8px 0px 0px;
+	border-radius: 8px 8px 0px 0px;
+	border-bottom:2px solid #40020a;
+	color:#FFF !important;
+	text-shadow: 1px 1px 1px #40020a;
+}
+
+h3.insta-feat-title-orange {
+	margin:0;
+	padding:8px 20px !important;
+	text-align:left;
+	font-size:22px;
+	background: #efad3d; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VmYWQzZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlODhjMGIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #efad3d 0%, #e88c0b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efad3d), color-stop(100%,#e88c0b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #efad3d 0%,#e88c0b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #efad3d 0%,#e88c0b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #efad3d 0%,#e88c0b 100%); /* IE10+ */
+	background: linear-gradient(top,  #efad3d 0%,#e88c0b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efad3d', endColorstr='#e88c0b',GradientType=0 ); /* IE6-8 */
+	-webkit-border-radius: 8px 8px 0px 0px;
+	border-radius: 8px 8px 0px 0px;
+	border-bottom:2px solid #b7780b;
+	color:#3d3d3d !important;
+	text-shadow: 1px 1px 1px #f6e1be;
+}
+
+h3.insta-feat-title-grey {
+	margin:0;
+	padding:8px 20px !important;
+	text-align:left;
+	font-size:22px;
+	background: #eeeeee; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjY2NjY2MiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+	background: linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-8 */
+	-webkit-border-radius: 8px 8px 0px 0px;
+	border-radius: 8px 8px 0px 0px;
+	border-bottom:2px solid #bbb;
+	color:#3d3d3d !important;
+	text-shadow: 1px 1px 1px #FeFeFe;
+}
+
+/*= LOGIN FORM SHORTCODE
+ * ----------------------------*/
+.insta-login-sc {
+	display:inline-block;
+	margin-top:15px;
+	margin-bottom:25px;
+}
+
+.insta-login-sc p {
+	margin:0 0 16px 0 !important;
+	padding:0;
+}
+
+/*= EXPIRED TABLE
+ * ----------------------------*/
+table.insta-protect-table, 
+table.insta-protect-table tbody,
+table.insta-protect-table tfoot,
+table.insta-protect-table thead,
+table.insta-protect-table tr,
+table.insta-protect-table th,
+table.insta-protect-table td {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	font-size: 100% !important;
+	vertical-align: baseline;
+}
+
+table.insta-protect-table {
+	border-collapse: collapse !important;
+	border-spacing: 0 !important;
+	line-height: 2 !important;
+	margin: 0 auto 24px !important;
+	width: 95% !important;
+}
+
+table.insta-protect-table tbody td {
+	border: 1px solid #ededed !important;
+	padding: 5px 10px !important;
+	text-align:center !important;
+	font-size:14px !important;
+}
+
+table.insta-discount-cart, 
+table.insta-discount-cart tbody,
+table.insta-discount-cart tfoot,
+table.insta-discount-cart thead,
+table.insta-discount-cart tr,
+table.insta-discount-cart th,
+table.insta-discount-cart td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+table.insta-discount-cart {
+	border-collapse: collapse;
+	border-spacing: 0;
+	color: #757575;
+	font-size: 12px;
+	font-size: 0.857142857rem;
+	line-height: 2;
+	margin: 0 0 24px;
+	margin: 0 0 1.714285714rem;
+	width: 100%;
+}
+
+table.insta-discount-cart th {
+	color: #636363;
+	font-size: 11px;
+	font-size: 0.785714286rem;
+	font-weight: bold;
+	line-height: 2.181818182;
+	text-align: left;
+	text-transform: uppercase;
+	background-color:transparent;
+}
+
+table.insta-discount-cart td {
+	color: #757575;
+	font-size: inherit;
+	font-weight: normal;
+	padding: 6px 10px 6px 10px;
+	text-align: left;
+}
+
+table.insta-discount-cart tbody td {
+	border-top: 1px solid #ededed;
+	border-bottom: 1px solid #ededed;
+	background-color:#F5F5F5;
+}
+
+.insta-facebook-btn,
+.insta-facebook-btn:hover {
+	border:none;
+	background:transparent url(../images/fb-button.png) top left no-repeat;
+	width:247px;
+	height:44px;
+	color:#FFF;
+	font-weight:800;
+	font-size:15px;
+	text-shadow: 1px 1px 1px #2b4e79;
+	cursor:pointer;
+}
+
+.insta-disc-field {
+	margin:3px auto;
+	width:180px;
+	padding:7px;
+    -webkit-box-shadow: inset 0px 1px 4px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 1px 4px 2px rgba(0, 0, 0, 0.1);
+    border:1px solid #ccc;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color:#595959;
+	font-family:arial, verdana, helvetica, sans-serif;
+}
+
+.insta-qtip {
+	color:#2585c7;
+	border-bottom:1px dashed #ccc;
+	cursor:pointer;
+}
+
+.insta-login-center {
+	width:360px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.insta-form-center {
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+}

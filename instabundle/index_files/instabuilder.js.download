@@ -1,0 +1,86 @@
+jQuery(document).ready(function($){
+	$('ul.opl-tab-titles').each(function(){
+		$("li:first-child", this).addClass('opl-selected');
+	});
+	
+	var isOplInputSupported = 'placeholder' in document.createElement('input');
+	
+	$('.opl-tab').each(function(){
+		var $this = $(this);
+		$this.click(function(e){
+			var tab_id = '#' + $this.attr('rel');
+			$this.parent().parent().find('.opl-selected').removeClass('opl-selected');
+			$this.parent().addClass('opl-selected');
+			$this.parent().parent().parent().find('.opl-tab-content').hide();
+			$(tab_id).fadeIn();
+			e.preventDefault();
+		});
+	});
+	
+	if ( isOplInputSupported ) {
+		$('.opl-email').each(function(){
+			$(this).keyup(function(){
+				insta_email_validation($(this));
+			});
+			
+			$(this).blur(function(){
+				insta_email_validation($(this));
+			});
+		});
+		
+		$('.opl-required').each(function(){
+			$(this).keyup(function(){
+				insta_required_validation($(this));
+			});
+			
+			$(this).blur(function(){
+				insta_required_validation($(this));
+			});
+		});
+	}
+	
+	$('.opl-resp-submit').each(function(){
+		$(this).submit(function(e){
+			var $this = $(this), reqpass = 0;
+			$this.find('.opl-required').each(function(){
+				if ( $(this).is(":visible") ) {
+					if ( !insta_required_validation($(this)) ) reqpass += 1;
+				}
+			});
+			
+			if ( $this.find('.opl-email').length || $this.find('.opl-email').is(":visible") )
+				if ( !insta_email_validation($this.find('.opl-email')) ) reqpass += 1;
+	
+			if ( reqpass > 0 ) return false;
+			else return true;
+		});
+	});
+});
+
+function insta_email_validation( element ) {
+	if ( !insta_validate_email(element.val()) ) {
+		element.addClass('insta-field-error');
+		element.next('span').addClass('insta-field-error-txt').text('Please enter a valid email address');
+		return false;
+	} else {
+		element.removeClass('insta-field-error');
+		element.next('span').removeClass('insta-field-error-txt').text('');
+	}
+	return true;
+}
+
+function insta_required_validation( element ) {
+	if ( element.val() == '' ) {
+		element.addClass('insta-field-error');
+		element.next('span').addClass('insta-field-error-txt').text('This field is required');
+		return false;
+	} else {
+		element.removeClass('insta-field-error');
+		element.next('span').removeClass('insta-field-error-txt').text('');
+	}
+	return true;
+}
+
+function insta_validate_email ( value ) {
+	return /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))$/i.test(value);
+}
