@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Exo Light'), local('Exo-Light'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/exo/v4/dmD6gKcs59jrq1uKvTTMxQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Exo Regular'), local('Exo-Regular'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/exo/v4/m5W5Curk5POZ4iQOoRn-Ug.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Exo Medium'), local('Exo-Medium'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/exo/v4/9GQrDsQoLNPSbu4a8XkaZw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Exo DemiBold'), local('Exo-DemiBold'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/exo/v4/BfPy-oLZyJitfovLhnoy1A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Exo Bold'), local('Exo-Bold'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/exo/v4/Pb-Tqi3xXEdTJ3ZTpmCsBw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Exo ExtraBold'), local('Exo-ExtraBold'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/exo/v4/q6KmdSsfN6LEK-raIRJ77Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Handlee Regular'), local('Handlee-Regular'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/handlee/v5/cNycqCSU8dNAVKEAWPvbqw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/opensans/v13/EInbV5DfGHOiMmvb1Xr-honF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/roboto/v15/zN7GBFwfMP4uA6AR0HCoLQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIqCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/ubuntu/v7/2Q-AW1e_taO6pHwMXcXW5w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/ubuntu/v7/OsJ2DjdpjqFRVUSto6IffKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/ubuntu/v7/0ihfXUL2emPh0ROJezvraKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Condensed'), local('UbuntuCondensed-Regular'), url(http://web.archive.org/web/20150802022516im_/http://fonts.gstatic.com/s/ubuntucondensed/v6/DBCt-NXN57MTAFjitYxdrDR-eWpsHSw83BRsAQElGgc.ttf) format('truetype');
+}
+
+/*
+     FILE ARCHIVED ON 02:25:16 Aug 02, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:16:17 Jun 09, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 55.71 (3)
+  esindex: 0.014
+  captures_list: 167.596
+  CDXLines.iter: 16.486 (3)
+  PetaboxLoader3.datanode: 114.21 (4)
+  exclusion.robots: 72.101
+  xauthn.chkprivs: 0.11
+  exclusion.robots.policy: 72.08
+  RedisCDXSource: 2.204
+  PetaboxLoader3.resolve: 22.031
+  xauthn.identify: 71.416
+  load_resource: 125.748
+*/
