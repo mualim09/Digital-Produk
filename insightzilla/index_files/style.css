@@ -1,0 +1,106 @@
+.share-locker {
+    background-color: #FCF8E3;
+    border: 1px solid #FBEED5;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 20px;
+    padding: 8px 35px 8px 14px;
+    -moz-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    -webkit-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.share-locker-buttons-row {
+    display: table-cell;
+}
+
+.share-locker-like {
+	display: inline-block;
+	height: 20px;
+	overflow: hidden;
+	vertical-align: middle;
+	margin-right: 30px;
+	margin-top: -5px;
+}
+
+.fb_edge_widget_with_comment span.fb_edge_comment_widget iframe.fb_ltr {
+    display: none !important;
+}
+
+.share-locker-share {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+.share-locker-twitter {
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+}
+
+.share-locker-google {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    height: 20px;
+}
+
+.share-locker-vk-share {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    height: 22px;
+    width: 140px;
+}
+
+.share-locker.blue{
+	background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    color: #3A87AD;
+}
+
+.share-locker.green{
+	background-color: #DFF0D8;
+    border-color: #D6E9C6;
+    color: #468847;
+}
+
+.share-locker.red{
+	background-color: #F2DEDE;
+    border-color: #EED3D7;
+    color: #B94A48;
+}
+
+.share-locker.yellow{
+	background-color: #FCF8E3;
+    border-color: #FBEED5;
+    color: #B94A48;
+}
+
+
+
+/*
+     FILE ARCHIVED ON 17:25:16 Jul 28, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:51:45 Jun 09, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 79.436 (3)
+  esindex: 0.008
+  captures_list: 536.802
+  CDXLines.iter: 13.472 (3)
+  PetaboxLoader3.datanode: 136.746 (4)
+  exclusion.robots: 221.271
+  xauthn.chkprivs: 0.047
+  exclusion.robots.policy: 221.26
+  RedisCDXSource: 220.264
+  PetaboxLoader3.resolve: 60.106
+  xauthn.identify: 220.915
+  load_resource: 128.505
+*/

@@ -1,0 +1,25 @@
+.clearfix:before,.clearfix:after{content:"";display:table}.clearfix:after{clear:both}.clearfix{*zoom:1}.prettycheckbox,.prettyradio{display:inline-block;padding:0;margin:0}.prettycheckbox>a,.prettyradio>a{height:30px;width:30px;display:block;float:left;cursor:pointer;margin:0;background:url('/web/20170725135502im_/http://insightzilla.com/wp-content/plugins/instabuilder2/assets/js/prettyCheckable/img/sprites-sfa68604977.png')}.prettycheckbox>a:focus,.prettyradio>a:focus{outline:0 none}.prettycheckbox label,.prettyradio label{display:block;float:left;margin:6px 5px;cursor:pointer}.prettycheckbox a.disabled,.prettycheckbox label.disabled,.prettyradio a.disabled,.prettyradio label.disabled{cursor:not-allowed}.prettycheckbox>a{background-position:0 0}.prettycheckbox>a:focus{background-position:-30px 0}.prettycheckbox>a.checked{background-position:-60px 0}.prettycheckbox>a.checked:focus{background-position:-90px 0}.prettycheckbox>a.checked.disabled{background-position:-150px 0}.prettycheckbox>a.disabled{background-position:-120px 0}.prettyradio>a{background-position:-180px 0}.prettyradio>a:focus{background-position:-210px 0}.prettyradio>a.checked{background-position:-240px 0}.prettyradio>a.checked:focus{background-position:-270px 0}.prettyradio>a.checked.disabled{background-position:-330px 0}.prettyradio>a.disabled{background-position:-300px 0}
+
+/*
+     FILE ARCHIVED ON 13:55:02 Jul 25, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:51:47 Jun 09, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 465.565 (3)
+  esindex: 0.008
+  captures_list: 699.886
+  CDXLines.iter: 15.588 (3)
+  PetaboxLoader3.datanode: 136.591 (4)
+  exclusion.robots: 212.929
+  xauthn.chkprivs: 0.052
+  exclusion.robots.policy: 212.915
+  RedisCDXSource: 2.228
+  PetaboxLoader3.resolve: 473.364 (3)
+  xauthn.identify: 212.559
+  load_resource: 181.23
+*/
