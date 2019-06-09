@@ -1,0 +1,40 @@
+jQuery(document).ready(function($){
+	$('ul.opl-tab-titles').each(function(){
+		$("li:first-child", this).addClass('opl-selected');
+	});
+
+	$('.opl-tab').each(function(){
+		var $this = $(this);
+		$this.click(function(e){
+			var tab_id = '#' + $this.attr('rel');
+			$this.parent().parent().find('.opl-selected').removeClass('opl-selected');
+			$this.parent().addClass('opl-selected');
+			$this.parent().parent().parent().find('.opl-tab-content').hide();
+			$(tab_id).fadeIn();
+			e.preventDefault();
+		});
+	});
+});
+/*
+     FILE ARCHIVED ON 20:39:31 May 05, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:06:43 Jun 09, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 163.304 (3)
+  esindex: 0.006
+  captures_list: 273.657
+  CDXLines.iter: 10.864 (3)
+  PetaboxLoader3.datanode: 133.125 (4)
+  exclusion.robots: 91.977
+  xauthn.chkprivs: 0.033
+  exclusion.robots.policy: 91.968
+  RedisCDXSource: 4.992
+  PetaboxLoader3.resolve: 73.463 (2)
+  xauthn.identify: 91.741
+  load_resource: 65.253
+*/
