@@ -1,0 +1,56 @@
+$(document).ready(function (e) {
+    $(".thumbnail").click(function (e) {
+
+        var address = $(this).attr("src");
+        $("#popup").fadeIn("slow");
+        $("#lightbox").attr("src", address);
+    });
+    $("#close").click(function () {
+        $("#popup").fadeOut("fast");
+    });
+
+});
+
+countdown();
+
+function countdown() {
+    var BigDay = new Date("6 June 2019, 11:59 PM EST");
+    var msPerDay = 24 * 60 * 60 * 1000;
+    window.setInterval(function () {
+        var today = new Date();
+        var timeLeft = (BigDay.getTime() - today.getTime());
+
+        var e_daysLeft = timeLeft / msPerDay;
+        var daysLeft = Math.floor(e_daysLeft);
+
+        var e_hrsLeft = (e_daysLeft - daysLeft) * 24;
+        var hrsLeft = Math.floor(e_hrsLeft);
+
+        var e_minsLeft = (e_hrsLeft - hrsLeft) * 60;
+        var minsLeft = Math.floor(e_minsLeft);
+
+        var e_secsLeft = (e_minsLeft - minsLeft) * 60;
+        var secsLeft = Math.floor(e_secsLeft);
+
+        //var timeString = daysLeft + " : " + hrsLeft + " : " + minsLeft + " : " + secsLeft;
+
+        if (daysLeft < 10 && daysLeft >= 0) daysLeft = "0" + daysLeft;
+        if (hrsLeft < 10) hrsLeft = "0" + hrsLeft;
+        if (minsLeft < 10) minsLeft = "0" + minsLeft;
+        if (secsLeft < 10) secsLeft = "0" + secsLeft;
+
+        var timeString = "<div class='timebox1'><span class='md45 sm35 xs29 w600'>" + hrsLeft + "</span><span class='md14 hrs white '>HRS</span> </div> <span class='md45 sm35 xs29 w600 white'>:</span> <div class='timebox1'><span class='md45 sm35 xs29 w600'>" + minsLeft + "</span><span class='md14 hrs white'>MIN</span></div> <span class='md45 sm35 xs29 white'>:</span> <div class='timebox1'><span class='md45 sm35 xs29 w600'>" + secsLeft + "</span><span class='md14 hrs white'>SEC</span></div></div>";
+
+        $('.hs_hours').html(timeString);
+
+        var timeString2 = "<div class='timebox2'><span class='md45 sm35 xs29 w600'>" + hrsLeft + "</span></div> <div class='timebox2'><span class='md45 sm35 xs29 w600'>" + minsLeft + "</span></div> <div class='timebox2'><span class='md45 sm35 xs29 w600'>" + secsLeft + "</span></div></div>";
+        $('.hs_hours2').html(timeString2);
+
+        var timeString3 = "<div class='timebox1'><span class='md45 sm35 xs29 w600'>" + hrsLeft + "</span></div> <div class='timebox1'><span class='md45 sm35 xs29 w600'>" + minsLeft + "</span></div> <div class='timebox1'><span class='md45 sm35 xs29 w600'>" + secsLeft + "</span></div></div>";
+        $('.hs_hours3').html(timeString3);
+
+    }, 1000);
+
+
+}
+

@@ -1,0 +1,115 @@
+@font-face
+{
+font-family:oswald;
+src:url(../fonts/Oswald.otf);
+}
+.hs_date_wrapper {
+float: left;
+width: 100%;
+}
+
+.hs_time {
+height: auto;
+width: 100%;
+margin-top: 0px;
+}
+
+.hs_time .hs_time_part {
+width: 100%;
+}
+
+.hs_hours {
+color: #fff;
+margin: auto;
+height: auto;
+width: 100%;
+letter-spacing:2px;
+text-align:center;
+text-decoration: none;
+display:inline-block;
+}
+.dt_title
+{
+	width:100%;
+	margin-top: -5%;
+}
+.hs_days {
+	color: #fff;
+	float: left;
+	text-transform:uppercase;
+	text-align:center;
+	height: auto;
+	width:25%;
+	text-decoration: none;
+}
+.hs_days1 {
+	color: #fff;
+	float: left;
+	text-transform:uppercase;
+	text-align:center;
+	height: auto;
+	width:25%;
+	text-decoration: none;
+}
+
+.hs_min {
+	color: #fff;
+	text-transform:uppercase;
+	float: left;
+	height: auto;
+	width:25%;
+	text-align:center;
+	text-decoration: none;
+}
+.hs_min1 {
+	color: #fff;
+	text-transform:uppercase;
+	float: left;
+	height: auto;
+	width:25%;
+	text-align:center;
+	text-decoration: none;
+}
+
+.hs_sec {
+	color: #fff;
+	float: left;
+	height: auto;
+	width:25%;
+	text-align:center;
+	text-decoration: none;
+	text-transform:uppercase;
+}
+.hs_sec1{
+	color: #fff;
+	float: left;
+	height: auto;
+	width:25%;
+	text-align:center;
+	text-decoration: none;
+	text-transform:uppercase;
+}
+
+.hs_hour {
+	color: #fff;
+	float: left;
+	height: auto;
+	text-align:center;
+	width:25%;
+	text-decoration: none;
+	text-transform:uppercase;
+}
+.hs_hour1 {
+	color: #fff;
+	float: left;
+	height: auto;
+	text-align:center;
+	width:25%;
+	text-decoration: none;
+	text-transform:uppercase;
+}
+.timer_caption
+{
+margin-top: 15px;
+line-height:30px;
+}
