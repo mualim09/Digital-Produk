@@ -1,0 +1,60 @@
+jQuery.noConflict();
+
+;(function ($, window, undefined) {
+    'use strict';
+
+    var $doc = $(document),
+        Modernizr = window.Modernizr;
+
+    $(document).ready(function() {
+         $doc.foundation();
+
+        $.fn.placeholder ? $('input, textarea').placeholder() : null;
+
+        $("#main_nav .menu").tinyNav({
+            active: 'current-menu-item'
+        });
+
+    });
+
+    $('.block-grid.two-up>li:nth-child(2n+1)').css({clear: 'both'});
+    $('.block-grid.three-up>li:nth-child(3n+1)').css({clear: 'both'});
+    $('.block-grid.four-up>li:nth-child(4n+1)').css({clear: 'both'});
+    $('.block-grid.five-up>li:nth-child(5n+1)').css({clear: 'both'});
+
+    // Hide address bar on mobile devices (except if #hash present, so we don't mess up deep linking).
+    if (Modernizr.touch && !window.location.hash) {
+        $(window).load(function () {
+            setTimeout(function () {
+                window.scrollTo(0, 1);
+            }, 0);
+        });
+    }
+
+})(jQuery, this);
+
+
+
+/*
+     FILE ARCHIVED ON 08:57:22 Aug 28, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:14:09 Jul 02, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 45.531 (3)
+  esindex: 0.008
+  captures_list: 2368.696
+  CDXLines.iter: 13.462 (3)
+  PetaboxLoader3.datanode: 90.322 (5)
+  exclusion.robots: 2304.945
+  xauthn.chkprivs: 0.034
+  exclusion.robots.policy: 2304.918
+  RedisCDXSource: 1.332
+  PetaboxLoader3.resolve: 146.514 (2)
+  xauthn.identify: 2304.465
+  load_resource: 198.523
+*/
