@@ -3,6 +3,7 @@ var twLSN = [
 'toko-whatsapp.blogspot.com',
 'jasa-design.web.id',
 'www.jasa-design.web.id',
+'demotokowhatsapp.blogspot.com',
 ];
 
 var redirectUrl = 'http://bit.ly/toko-whatsapp';
